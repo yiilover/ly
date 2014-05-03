@@ -879,3 +879,24 @@ padding: 10px 0;
 text-align: center;
     }
 
+.wp{width:920px;margin:0 auto}
+
+.head .nav-bar .r-nav{background:0;float:right;text-align:right;margin-right:2px}
+.head .nav-bar .r-nav a{display:block;height:46px;width:84px;line-height:46px;font-size:16px;font-family:\5FAE\8F6F\96C5\9ED1;color:#999;background:url("http://staticcdn.b5m.com/images/common/head_c.png?t=20140430162526") 0 -540px}
+.head .nav-bar .r-nav a:hover{color:#D90000;background-position:0 -592px}
+
+.nav-bar{height:46px;border-top:2px solid #D90000;margin-top:10px;background:url(http://staticcdn.b5m.com/images/common/head_c_rx.png?t=20140430162526) repeat-x scroll 0 0 transparent;-webkit-box-shadow:0 2px 20px #f2f2f2;-moz-box-shadow:0 2px 20px #f2f2f2;box-shadow:0 2px 20px #f2f2f2}
+
+ .nav-list{position:relative;float:left;margin-left:1px}
+
+ .nav-list li{float:left;position:relative;width:77px;margin-left:-1px;text-align:center;background:url(http://staticcdn.b5m.com/images/common/head_c.png?t=20140430162526) no-repeat right -67px scroll}
+
+.nav-list .last-nav{background:0}
+.nav-list a:hover{color:#D90000;box-shadow:0 0 4px #aaa;text-decoration:none}
+.nav-list .cur{background:#D90000}
+.nav-list .cur a{color:#fff}
+.nav-list a{display:block;height:46px;line-height:46px;font-size:16px;color:#666;font-family:\5FAE\8F6F\96C5\9ED1}
+.nav-list .new,.nav-list .hot{position:absolute;font-size:0;line-height:0;overflow:hidden;top:-4px;right:4px;width:22px;height:14px;background:url(http://staticcdn.b5m.com/images/common/head_c.png?t=20140430162526?v1) no-repeat 0 0 scroll}
+.nav-list .hot{background-position:-128px -150px}.nav-list .new{background-position:-128px -200px}
+
+.head .wp{position:relative}.head .header-rearch-submit:hover{background-position:0 -660px}
