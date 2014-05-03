@@ -6,7 +6,7 @@ function WriteQqStr_OK()
 	document.write('<DIV id=backi_OK style="RIGHT: 0px; OVERFLOW: visible; POSITION: absolute; TOP: 160px">');
 	document.write('<table border="0" cellpadding="0" cellspacing="0" width="55">');
 	document.write('<tr><td style="padding:0"><a href="javascript:close_float_left_OK();void(0);" title="close"><IMG src="/kefu/img/sk/1.gif" border=0></a></td></tr>');
-	document.write('<tr><td style="padding:0"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1941051028&site=qq&menu=yes"><img border=\"0\" SRC=\'/kefu/img/sk/3.gif\' alt=\"QQ咨询\"></a></td></tr>');
+	document.write('<tr><td style="padding:0"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1838225378&site=qq&menu=yes"><img border=\"0\" SRC=\'/kefu/img/sk/3.gif\' alt=\"QQ咨询\"></a></td></tr>');
 	document.write('<tr><td style="padding:0"><a href="msnim:chat?contact=ecmoban@hotmail.com"><IMG src="/kefu/img/sk/8.gif" border=0 alt="MSN咨询"></a></td></tr>');
 	document.write('<tr><td style="padding:0"><a target=_blank href="http://amos.im.alisoft.com/msg.aw?v=2&uid=乐影baby&site=cntaobao&s=1&charset=utf-8" ><IMG src="/kefu/img/sk/5.gif" border=0 alt="旺旺咨询"></a></td></tr>');
 	document.write('<tr><td style="padding:0"><A href="http://www.ddecshop.com"><IMG src="/themes/ok/images/6.jpg" border=0 alt="上海多多模板之家""></A></td></tr>');

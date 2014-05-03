@@ -35,7 +35,7 @@ function setHomepage(){　 // 设为首页
 <div class="top_r">
 <h1 class="h_1"><a href="/" title="上海多多模板之家">上海多多模板之家</a>(<a href="/" title="上海多多模板之家">上海多多模板之家</a>)专业提供<a href="/" title="ecshop模板">ecshop模板</a>,<a href="/" title="ecshop模板定制">ecshop模板定制</a>,<a href="/" title="ecshop模板制作">ecshop模板制作</a>,<a href="/" title="ecshop模板开发">ecshop模板开发</a>,<a href="/" title="ecshop模板二次开发">ecshop模板二次开发</a>,<a href="/" title="ecshop模板修改">ecshop模板修改</a>,<a href="/" title="ecshop英文模板">ecshop英文模板</a>,<a href="/" title="精品ecshop模板">精品ecshop模板</a>,<a href="/" title="ecshop模板案例">ecshop模板案例</a>,<a href="/" title="ecshop模板演示">ecshop模板演示</a>等服务！
 
-<br>业务咨询：QQ 1941051028 [<a href="javascript:setHomepage();" _fcksavedurl="javascript:setHomepage();" >+设为主页</a>  <a href="javascript:addCookie();" _fcksavedurl="javascript:addCookie();">+收藏本站</a>]</h1>
+<br>业务咨询：QQ 1838225378 [<a href="javascript:setHomepage();" _fcksavedurl="javascript:setHomepage();" >+设为主页</a>  <a href="javascript:addCookie();" _fcksavedurl="javascript:addCookie();">+收藏本站</a>]</h1>
 </div>
 </div>
 <div class="header">
@@ -73,8 +73,8 @@ function setHomepage(){　 // 设为首页
 <div class="search_bg">
 <div class="block_1 clearfix top_m">
 <div style="float:left;">
-&nbsp;eschop模板定制、eschop模板开发、ecshop模板案例、eschop模板购买。业务咨询：QQ 1941051028 
-<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1941051028&site=qq&menu=yes"><img SRC='themes/ok/images/qq.gif' alt="业务咨询" border="0" align="absmiddle" style=" _margin-top:5px;" ></a></div><div style="float:right; "><form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >快速查找模板：  <input type="text"  id="keyword" name="keywords" onClick="javascript:this.value='';" value="请输入模板关键字..." style="height:12px; width:150px; font-size:11px;"> <input name="imageField" type="submit" value="" class="go" style="cursor:pointer; _margin-top:5px;" />&nbsp;
+&nbsp;eschop模板定制、eschop模板开发、ecshop模板案例、eschop模板购买。业务咨询：QQ 1838225378 
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1838225378&site=qq&menu=yes"><img SRC='themes/ok/images/qq.gif' alt="业务咨询" border="0" align="absmiddle" style=" _margin-top:5px;" ></a></div><div style="float:right; "><form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >快速查找模板：  <input type="text"  id="keyword" name="keywords" onClick="javascript:this.value='';" value="请输入模板关键字..." style="height:12px; width:150px; font-size:11px;"> <input name="imageField" type="submit" value="" class="go" style="cursor:pointer; _margin-top:5px;" />&nbsp;
 </form>
 </div>
 
