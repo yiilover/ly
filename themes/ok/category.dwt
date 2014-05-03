@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{insert_scripts files='common.js,index.js'}
+
+
+
+<!--[if lt IE 7]>
+<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
+<![endif]-->
+</head>
+<body >
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block_1 clearfix" style="height:80px; line-height:80px; overflow:hidden;">
+<img src="themes/ok/images/tishi.jpg" border="0" alt="温馨提示：正品模板！淘宝支付宝全程交易，买模板，更放心！" />
+</div>
+<div class="blank"></div>
+<div class="block_1 clearfix" >
+<div style="border:5px #FFCC00 solid; padding:10px;">
+<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#000000; font-weight:bold;">按分类：</font>
+<!--{foreach from=$categories item=cat}-->
+<a href="{$cat.url}" style="{$cat.style}">{$cat.name}</a>&nbsp;
+
+<!--{foreach from=$cat.cat_id item=child}-->
+<a href="{$child.url}" style="{$child.style}">{$child.name}</a>&nbsp;
+<!--{/foreach}-->
+<!--{/foreach}-->
+</div>
+
+<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#000000; font-weight:bold;">按价格：</font>
+			<!--{foreach from=$price_grade item=grade}-->
+				<!-- {if $grade.selected} -->
+				<a style="color:#FF0000">{$grade.price_range}</a>&nbsp;&nbsp;
+				<!-- {else} -->
+				<a href="{$grade.url}">{$grade.price_range}</a>&nbsp;&nbsp;
+				<!-- {/if} -->
+			<!--{/foreach}-->
+</div>
+
+
+<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;">
+<font style=" color:#000000; font-weight:bold;">按颜色：</font>
+			<!--{foreach from=$filter_attr_list item=filter_attr}-->
+      
+			
+			<!--{foreach from=$filter_attr.attr_list item=attr}-->
+				<!-- {if $attr.selected} -->
+				<a style="color:#FF0000">{$attr.attr_value}</a>&nbsp;&nbsp;&nbsp;
+				<!-- {else} -->
+				<a href="{$attr.url}">{$attr.attr_value}</a>&nbsp;&nbsp;
+				<!-- {/if} -->
+			<!--{/foreach}-->
+		
+      <!--{/foreach}-->
+</div>
+
+<div style=" padding-bottom:5px; padding-top:5px; "><font style=" color:#0000FF; font-weight:bold;">按推荐：</font>
+ <!--{foreach from=$best_goods item=goods}-->
+<a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.name2}</a>&nbsp;
+ <!--{/foreach}-->
+</div>
+
+</div>
+</div>
+<div class="blank"></div>
+<div class="block_1 clearfix">
+  
+<div class="block_1 clearfix">
+<div style="height:45px; background-image:url(themes/ok/images/index_mb_tt_mb.gif);background-position:center; background-repeat:no-repeat;"></div>
+<div style="min-height:450px;_height:45px; background-image:url(themes/ok/images/index_mb_mid.gif);background-position:center; background-repeat:repeat-y;" class="clearfix" >
+
+<!--{foreach from=$goods_list item=goods}-->	
+				     <div class="goodsItem_re" onMouseOver="showG('G_{$goods.goods_id}','s')" onMouseOut="showG('G_{$goods.goods_id}','h')" style=" margin-left:10px;">
+           <ul>
+		   <li>
+           <a href="{$goods.url}" title="{$goods.goods_name|escape:html}"><img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
+           <p id="G_{$goods.goods_id}" style="display:none;">{$goods.goods_name}</p>
+
+		   </li>
+		   </ul>
+        </div>
+  <!--{/foreach}-->               
+        
+</div>
+<div style="height:15px; background-image:url(themes/ok/images/index_mb_bb.gif);background-position:center; background-repeat:no-repeat;"></div>
+</div>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+//-->
+</script>
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+var button_compare = '';
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个商品进行对比";
+var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择商品属性";
+</script>
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --></body>
+
+</html>

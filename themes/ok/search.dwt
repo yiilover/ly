@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="ECSHOP v2.7.3" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="Keywords" content="ecshop模板家,ecshop模板,ecshop模板制作,ecshop模板定制,ecshop模板开发,ecshop模板案例,ecshop模板演示,ecshop模板修改,ecshop英文模板" />
+<meta name="Description" content="ecshop模板家,ecshop模板,ecshop模板制作,ecshop模板定制,ecshop模板开发,ecshop模板案例,ecshop模板修改,ecshop英文模板,买ecshop模板找多多模板之家！" />
+<title>ecshop模板家 ecshop模板 ecshop模板制作 ecshop模板定制 ecshop模板开发 ecshop模板案例 ecshop模板修改 ecshop模板演示</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|ecshop模板家 ecshop模板 ecshop模板制作 ecshop模板定制 ecshop模板开发 ecshop模板案例 ecshop模板修改 ecshop模板演示" href="feed.xml" />
+
+
+{insert_scripts files='common.js,index.js,compare.js,global.js,utils.js'}
+
+
+
+<!--[if lt IE 7]>
+<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
+<![endif]-->
+</head>
+<body >
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block_1 clearfix">
+
+  
+
+  
+        <div class="box">
+     <div class="box_1">
+      <h3>
+
+    
+                 <span>搜索结果</span>
+                             <form action="search.php" method="post" class="sort" name="listform" id="form">
+          显示方式：
+          <a href="javascript:;" onClick="javascript:display_mode('list')"><img src="images/display_mode_list<!-- {if $pager.display == 'list'} -->_act<!-- {/if} -->.gif" alt="{$lang.display.list}"></a>
+          <a href="javascript:;" onClick="javascript:display_mode('grid')"><img src="images/display_mode_grid<!-- {if $pager.display == 'grid'} -->_act<!-- {/if} -->.gif" alt="{$lang.display.grid}"></a>
+          <a href="javascript:;" onClick="javascript:display_mode('text')"><img src="images/display_mode_text<!-- {if $pager.display == 'text'} -->_act<!-- {/if} -->.gif" alt="{$lang.display.text}"></a>&nbsp;&nbsp;
+              <select name="sort">
+              <option value="goods_id">按上架时间排序</option><option value="shop_price">按价格排序</option><option value="last_update">按更新时间排序</option>              </select>
+
+              <select name="order">
+              <option value="DESC">倒序</option><option value="ASC">正序</option>              </select>
+              <input type="image" name="imageField" src="themes/ok/images/bnt_go.gif" alt="go"/>
+              <input type="hidden" name="page" value="1" />
+              <input type="hidden" name="display" value="grid" id="display" />
+                                                              <input type="hidden" name="keywords" value="{$adv_val.keywords}" />
+                                                                                            <input type="hidden" name="category" value="0" />
+
+                                                                                            <input type="hidden" name="brand" value="0" />
+                                                                                                                                                    <input type="hidden" name="min_price" value="0" />
+                                                                                            <input type="hidden" name="max_price" value="0" />
+                                                                                            <input type="hidden" name="action" value="" />
+                                                                                            <input type="hidden" name="intro" value="" />
+                                                                                            <input type="hidden" name="goods_type" value="0" />
+                                                                                            <input type="hidden" name="sc_ds" value="0" />
+                                                                                            <input type="hidden" name="outstock" value="0" />
+                                                        </form>
+
+                     </h3>
+        
+          <form action="compare.php" method="post" name="compareForm" id="compareForm" onsubmit="return compareGoods(this);">
+
+
+          <!-- {if $pager.display == 'list'} -->
+<div class="goodsList">
+	<!--{foreach from=$goods_list item=goods}-->	
+                                                <ul id="" class="clearfix bgcolor">
+                <li>
+                <br>
+                </li>
+                <li class="thumb"><a href="{$goods.url}"><img alt="{$goods.goods_name|escape:html}" src="{$goods.goods_thumb}"></a></li>
+                <li class="goodsName">
+                <a class="f6" href="{$goods.url}">
+                                        {$goods.goods_name}<br>
+                                      </a>
+                                 </li>
+
+                </ul>
+      <!--{/foreach}-->                                                         
+                                                </div>
+
+
+
+
+
+
+
+
+	            <!-- {elseif $pager.display == 'grid'} -->
+                        <div class="centerPadd" style="">
+                <div class="clearfix " style="border:none;">
+                                     				     
+<!--{foreach from=$goods_list item=goods}-->		     
+				     <div class="goodsItem_re" onMouseOver="showG('G_{$goods.goods_id}','s')" onMouseOut="showG('G_{$goods.goods_id}','h')" style=" margin-left:10px;">
+           <ul>
+		   <li>
+           <a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
+           <p id="G_{$goods.goods_id}" style="display:none;">{$goods.goods_name}</p>
+
+		   </li>
+		   </ul>
+        </div>
+ <!--{/foreach}-->
+</div>
+                </div>
+
+
+
+
+
+
+
+  <!-- {elseif $pager.display == 'text'} -->
+<div class="goodsList">
+<!--{foreach from=$goods_list item=goods}-->	
+                             <ul id="bgcolor" class="clearfix bgcolor">
+
+              <li class="goodsName">
+              <a class="f6 f5" href="{$goods.url}">
+                                    {$goods.goods_name}<br>
+                                  </a>
+                             </li>
+
+
+              </ul>
+                            
+	       <!--{/foreach}-->
+                            </div>
+<!--{/if}-->
+
+
+
+
+                       </form>
+          <script type="text/javascript">
+                var button_compare = "比较选定商品";
+                var exist = "您已经选择了%s";
+                var count_limit = "最多只能选择4个商品进行对比";
+                var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+        
+				                var button_compare = '';
+                                var exist = "您已经选择了%s";
+                                var count_limit = "最多只能选择4个商品进行对比";
+                                var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+                
+
+        var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+        window.onload = function()
+        {
+          Compare.init();
+          fixpng();
+        }
+	var btn_buy = "购买";
+	var is_cancel = "取消";
+	var select_spe = "请选择商品属性";
+        </script>
+                </div>
+
+      </div>
+      <div class="blank"></div>
+      
+<form name="selectPageForm" action="/search.php" method="get">
+
+
+      <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+
+
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+
+//-->
+</script>
+
+   
+
+  
+</div>
+
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --></body>
+</html>
+

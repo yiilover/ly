@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$goods.goods_name}</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{insert_scripts files='common.js,index.js'}
+
+
+
+<!--[if lt IE 7]>
+<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
+<![endif]-->
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block_1 clearfix" style="height:80px; line-height:80px; overflow:hidden;">
+<a href="category.html" target="_blank"><img src="themes/ok/images/allthemes.jpg" border="0" alt="点击查看全部ECSHOP模板" /></a>
+</div>
+<div class="blank"></div>
+<div class="block_1 clearfix">
+<div style="height:20px; background-image:url(themes/ok/images/goods_tt.jpg);background-position:center; background-repeat:no-repeat;"></div>
+<div style="min-height:200px;_height:200px; background-image:url(themes/ok/images/goods_mid.jpg);background-position:center; background-repeat:repeat-y;">
+<div style="float:left; width:200px; height:200px; margin-left:10px;">
+		<img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" width="180" style=" border:5px #CCCCCC solid;" />
+	</div>
+<div style="float:left; width:700px; height:200px; text-align:left">
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; font-size:14px; font-weight:bold;">{$goods.goods_style_name}</div>
+
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;"><img src="themes/ok/images/baozheng.gif" border="0" alt="正品模板！淘宝支付宝全程交易，买模板，更放心！" /> </div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">商品点击：{$goods.click_count} 次</div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; color:#FF0000; font-size:14px;" class="url_ys"><a href="{$goods.goods_link}" target="_blank"><img src="themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
+ </div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">联系客服：QQ {foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach} <a href="http://wpa.qq.com/msgrd?v=3&uin={foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach}&site=qq&menu=yes"; target=_blank; ><img SRC='images/qq.gif' alt="业务咨询" border="0" align="absmiddle" ></a></div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">模板价格：
+<font style="font-weight:bold; color:#FF0000; font-size:18px;">{$goods.shop_price_formated}</font>&nbsp;&nbsp;<a title="买1G空间，送顶级域名" href="http://www.ddecshop.com/article-425.html" target="_blank">【最新优惠：买1G空间，送顶级域名】</a></div>
+</div>
+</div>
+
+<div style="height:20px; background-image:url(themes/ok/images/goods_bb.jpg);background-position:center; background-repeat:no-repeat;"></div>
+</div>
+<div class="blank"></div>
+<div class="block_1 clearfix">
+<div style=" border:1px #FF3300 solid; min-height:60px; padding:10px;  text-align:left; background-image: url(themes/ok/images/bg_fuwu.gif); background-repeat:no-repeat; ">
+<li class="li_tit">技术保障</li>
+<li>一、所有模板经过长期测试质量保证</li>
+<li>二、模板全div+css制作，利于搜索引擎优化</li>
+<li>三、兼容IE6 IE7 FF等主流浏览器，发现问题无条件处理</li>
+<li>四、客服专员 1:1 指导，协助安装并使用模板</li>
+<li>五、提供模板所需的程序文件</li>
+
+<li>六、模板随ECSHOP不断升级，并提供给客户</li>
+<li class="li_tit">我们的优势</li>
+<li>品牌优势：上海多多模板之家是国内最专业的EC模板制作团队品牌。</li>
+<li>经验优势：大量的模板开发经验的积累早已让我们成为国内最专业的EC模板制作团队。</li>
+<li>技术优势：每个模板都运用最流行的FLASH,JS,DIV+CSS技术，让搜索引擎更喜欢，并不失美感与功能。</li>
+<li>价格优势：每个模板都花费极大的力量制作，但是收费标准始终以模板市场价为依据，绝不乱开价。</li>
+<li>服务优势：只要成为我们的客户，无论是购买模板还是订制模板，都将成为我们的伙伴，提供终身技术支持。</li>
+</div>
+</div>
+<div class="blank"></div>
+
+<div class="block_1 clearfix">
+<div style=" border:1px #CCCCCC solid">
+<img src="themes/ok/images/liucheng.jpg" alt="交易流程" />
+</div>
+</div>
+<div class="blank"></div>
+<div class="block_1 clearfix">
+<div style="height:45px; background-image:url(themes/ok/images/index_mb_tt_xw.gif);background-position:center; background-repeat:no-repeat;padding-left:30px; font-size:14px; line-height:45px;">
+<strong>详细信息</strong>
+</div>
+<div style="min-height:45px;_height:45px; background-image:url(themes/ok/images/index_mb_mid.gif);background-position:center; background-repeat:repeat-y; ">
+<div style=" padding-left:5px; padding-right:5px; padding-top:5px;">
+<center>
+{$goods.goods_desc}
+</center>
+<div class="url_ys" style="text-align:center;height:50px; line-height:50px; margin-top:5px; border-top:1px #CCCCCC dotted;"><a href="{$goods.goods_link}" target="_blank">
+<div class="blank"></div>
+<img src="themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
+</div>
+</div>
+
+</div>
+<div style="height:15px; background-image:url(themes/ok/images/index_mb_bb.gif);background-position:center; background-repeat:no-repeat;float:left; width:100%"></div>
+</div>
+<div class="blank"></div>
+
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --></body>
+
+</html>
