@@ -9,10 +9,10 @@
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-{insert_scripts files='common.js,index.js'}
-<SCRIPT type=text/javascript charset=utf-8 src="themes/ok/js/pic.js"></SCRIPT>
-<SCRIPT type=text/javascript charset=utf-8 src="themes/ok/js/xixi.js"></SCRIPT>
-<SCRIPT type=text/javascript charset=utf-8 src="themes/ok/js/index.js"></SCRIPT>
+    <SCRIPT type=text/javascript charset=utf-8 src="/js/jquery.js"></SCRIPT>
+    <SCRIPT type=text/javascript charset=utf-8 src="/js/jquery.jcarousel.js"></SCRIPT>
+
+
 
 <!--[if lt IE 7]>
 <style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
@@ -31,31 +31,7 @@
 
 <DIV id="J_banner_action_panel" class="banner-icon"></DIV></DIV>
 </div>
-<SCRIPT type=text/javascript>
-(function() {
-E.onDOMReady(function() {
-//BANNER区域图片数据初始化
-var bannerImg = [
-	{
-		'title': '查看全部ecshop模板',
-		'banner': 'http://img01.taobaocdn.com/imgextra/i1/690715100/T213E0XXVXXXXXXXXX_!!690715100.gif',
-		'dlClass': 'sfk'
-	},
-	{
-		'title': '查看全部ecshop模板',
-		'banner': 'http://img02.taobaocdn.com/imgextra/i2/690715100/T2X9IYXgBaXXXXXXXX_!!690715100.jpg',
-		'dlClass': 'wsgw'
-	},
-	{
-		'title': '查看全部ecshop模板',
-		'banner': 'http://img02.taobaocdn.com/imgextra/i2/690715100/T2h2IZXXNaXXXXXXXX_!!690715100.jpg',
-		'dlClass': 'xykhk'
-	}	
-];
-new AP.pk.pa.slideshowIndex({banners: '.banner-explain',delay : 10000},bannerImg);
-});
-})();
-</SCRIPT>
+
 </div>
 <div class="block_1 clearfix">
 <div style="background-image:url(themes/ok/images/o_bg.gif); background-repeat:repeat-x; height:40px; line-height:40px; border:1px #DBDBDB solid;">
