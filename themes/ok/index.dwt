@@ -1,180 +1,183 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<meta name="Keywords" content="{$keywords}" />
-<meta name="Description" content="{$description}" />
-<meta property="qc:admins" content="1561272307330706375" />
-<title>{$page_title}</title>
-<link rel="shortcut icon" href="favicon.ico" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-    <SCRIPT type=text/javascript charset=utf-8 src="/js/jquery.js"></SCRIPT>
-    <SCRIPT type=text/javascript charset=utf-8 src="/js/jquery.jcarousel.js"></SCRIPT>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="Keywords" content="{$keywords}" />
+    <meta name="Description" content="{$description}" />
+    <meta property="qc:admins" content="1561272307330706375" />
+    <title>{$page_title}</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+    <link href="/themes/ok/jcarousel.basic.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery1.10.js"></script>
+    <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+
+    {insert_scripts files='common.js,index.js'}
 
 
 
-<!--[if lt IE 7]>
-<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
-<![endif]-->
+
+    <!--[if lt IE 7]>
+    <style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
+    <![endif]-->
 </head>
 <body >
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="block_1 clearfix">
-<div style="920px; padding-left:9px;_padding-left:0px; overflow:hidden;">
-<DIV id="J_banner_show" class=banner >
-<DIV class="banner-img" style="padding-top:0px;">
-<DIV class="banner-explain"><a href="http://www.ddecshop.com/category.html" target="_blank" title="专业服务品质保证-上海多多模板之家"><div class="point-url"></div></a></DIV>
-<DIV class="banner-explain"><a href="http://www.ddecshop.com/category.html" target="_blank" title="买模板选择上海多多模板之家"><div class="point-url"></div></a></DIV>
-<DIV class="banner-explain"><a href="http://www.ddecshop.com/category.html" target="_blank" title="买模板选择上海多多模板之家"><div class="point-url"></div></a></DIV>
-</DIV>
+    <div class="jcarousel">
+                <ul>
+                    <li><a href="http://ddecshop.com/goods-310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
+                    <li><a href="http://ddecshop.com/goods-312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
+                </ul>
+        <p class="jcarousel-pagination"></p>
+    </div>
 
-<DIV id="J_banner_action_panel" class="banner-icon"></DIV></DIV>
-</div>
 
 </div>
+
 <div class="block_1 clearfix">
-<div style="background-image:url(themes/ok/images/o_bg.gif); background-repeat:repeat-x; height:40px; line-height:40px; border:1px #DBDBDB solid;">
-<div class="f_l"><img src="themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1838225378&site=qq&menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://amos.im.alisoft.com/msg.aw?v=2&uid=乐影baby&site=cntaobao&s=1&charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
-</div></div>
+    <div style="background-image:url(themes/ok/images/o_bg.gif); background-repeat:repeat-x; height:40px; line-height:40px; border:1px #DBDBDB solid;">
+        <div class="f_l"><img src="themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1838225378&site=qq&menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://amos.im.alisoft.com/msg.aw?v=2&uid=乐影baby&site=cntaobao&s=1&charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
+    </div></div>
 <div class="blank5"></div>
 <div class="block_1 clearfix">
-<div class="f_l" style="width:330px; overflow:hidden;">
-<div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="http://www.ddecshop.com/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
-<div class="hot_c">
-<div class="f_l" style="margin-left:5px;_margin-left:3px; height:173px;"><A ><img src="themes/ok/images/ar_l.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopUp_1()" onmousedown="ISL_GoUp_1()" onmouseout="ISL_StopUp_1()" alt="查看上一个" /></A></div>
+    <div class="f_l" style="width:330px; overflow:hidden;">
+        <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="http://www.ddecshop.com/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
+        <div class="hot_c">
+            <div class="f_l" style="margin-left:5px;_margin-left:3px; height:173px;"><A ><img src="themes/ok/images/ar_l.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopUp_1()" onmousedown="ISL_GoUp_1()" onmouseout="ISL_StopUp_1()" alt="查看上一个" /></A></div>
 
-<div class="f_l hot_c_p">
-<div  id=ISL_Cont_1 class="c_v">
-<DIV class=ScrCont><DIV id=List1_1>
- <!--{foreach from=$hot_goods item=goods name=n}-->
-<a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_img}" class="f_l" width="260"/></a>
- <!--{/foreach}--></DIV>
-</DIV>
-</div>
-</div>
-<div class="f_r" style="margin-right:5px;_margin-right:3px; height:173px;"><A><img src="themes/ok/images/ar_r.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopDown_1()"  onmousedown="ISL_GoDown_1()" onmouseout="ISL_StopDown_1()" alt="查看下一个"/></A></div>
+            <div class="f_l hot_c_p">
+                <div  id=ISL_Cont_1 class="c_v">
+                    <DIV class=ScrCont><DIV id=List1_1>
+                        <!--{foreach from=$hot_goods item=goods name=n}-->
+                        <a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_img}" class="f_l" width="260"/></a>
+                        <!--{/foreach}--></DIV>
+                    </DIV>
+                </div>
+            </div>
+            <div class="f_r" style="margin-right:5px;_margin-right:3px; height:173px;"><A><img src="themes/ok/images/ar_r.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopDown_1()"  onmousedown="ISL_GoDown_1()" onmouseout="ISL_StopDown_1()" alt="查看下一个"/></A></div>
 
-</div>
-<div style=" background-image:url(themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
-</div>
-<SCRIPT type=text/javascript>
-<!--
-picrun_ini()
-//-->
-</SCRIPT>
-<div class="f_l" style="width:313px; margin-left:7px;">
-<div class="zx_t">
-<ul>
-<li id="ECS_tree1" class=" tabFront"><a href="http://www.ddecshop.com/article_cat-4.html" target="_blank">最新公告</a></li>
-<li id="ECS_tree2" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-5.html" target="_blank">行业动态</a></li>
-<li id="ECS_tree3" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-6.html" target="_blank">网店推广</a></li>
-<li id="ECS_tree4" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-7.html" target="_blank">网络创业</a></li>
-</ul>
-
-</div>
-<div class="zx_c">
-<div id="ECS_tree1_BODY">
-<ul>
- <!--{foreach from=$article_notice item=an}-->
-<li class="zx_tb"><a href="{$an.url}" title="{$an.title|escape:html}" target="_blank">{$an.short_title}</a></li>
-<!--{/foreach}-->
-
-</ul>
-</div>
-<div id="ECS_tree2_BODY" style="display:none;">
-<ul>
- <!--{foreach from=$article_circle item=ac}-->
-<li class="zx_tb"><a href="{$ac.url}" title="{$ac.title|escape:html}" target="_blank">{$ac.short_title}</a></li>
-<!--{/foreach}-->
-</ul>
-</div>
-<div id="ECS_tree3_BODY" style="display:none;">
-<ul>
- <!--{foreach from=$article_webshop item=aw}-->
-<li class="zx_tb"><a href="{$aw.url}" title="{$aw.title|escape:html}" target="_blank">{$aw.short_title}</a></li>
-<!--{/foreach}-->
-</ul>
-</div>
-<div id="ECS_tree4_BODY" style="display:none;">
-<ul>
- <!--{foreach from=$article_setup item=as}-->
-<li class="zx_tb"><a href="{$as.url}" title="{$as.title|escape:html}" target="_blank">{$as.short_title}</a></li>
-<!--{/foreach}-->
-</ul>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-//<![CDATA[
-  var cycleList = ['ECS_tree1','ECS_tree2','ECS_tree3','ECS_tree4'];
-  var tabFront = 'tabFront';
-  var tabBack = 'tabBack';
-  function cycleShow(obj)
-  {
-    var curObj;
-    var curBody;
-    for (i=0; i < cycleList.length; i++)
-    {
-      curObj = document.getElementById(cycleList[i]);
-      curBody = document.getElementById(cycleList[i] + '_BODY');
-      if (obj.id == curObj.id)
-      {
-        curObj.className = tabFront;
-        curBody.style.display = "";
-      }
-      else
-      {
-        curObj.className = tabBack;
-        curBody.style.display = "none";
-      }
-    }
-  }
-  // 添加事件
-  for (i=0; i< cycleList.length; i++)
-  {
-    document.getElementById(cycleList[i]).onmousemove = function()
-    {
-      cycleShow(this);
-    };
-  }
-//]]>
-</script>
-<div class="f_r" style="width:264px; margin-left:5px;">
-<div><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
-<div>
-<div class="f_l"><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
-</div>
-</div>
-</div>
-<div class="blank5"></div>
-<div class="block_1 clearfix">
-<div class="be_top"><a href="http://www.ddecshop.com/category.html" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
-<div class="be_mid">
- <!--{foreach from=$new_goods item=goods}-->
-    <div class="goodsItem_re" onMouseOver="showG('G_{$goods.id}','s')" onMouseOut="showG('G_{$goods.id}','h')">
-           <ul>
-		   <li>
-		   <a href="{$goods.url}" class="pics" title="{$goods.name|escape:html}" target="_blank"><img src="{$goods.goods_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
-		   <p id="G_{$goods.id}" style="display:none;">{$goods.short_style_name}</p>
-		   </li>
-		   </ul>
         </div>
-<!--{/foreach}-->
+        <div style=" background-image:url(themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
+    </div>
+    <SCRIPT type=text/javascript>
+        <!--
+        picrun_ini()
+        //-->
+    </SCRIPT>
+    <div class="f_l" style="width:313px; margin-left:7px;">
+        <div class="zx_t">
+            <ul>
+                <li id="ECS_tree1" class=" tabFront"><a href="http://www.ddecshop.com/article_cat-4.html" target="_blank">最新公告</a></li>
+                <li id="ECS_tree2" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-5.html" target="_blank">行业动态</a></li>
+                <li id="ECS_tree3" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-6.html" target="_blank">网店推广</a></li>
+                <li id="ECS_tree4" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-7.html" target="_blank">网络创业</a></li>
+            </ul>
 
-  
+        </div>
+        <div class="zx_c">
+            <div id="ECS_tree1_BODY">
+                <ul>
+                    <!--{foreach from=$article_notice item=an}-->
+                    <li class="zx_tb"><a href="{$an.url}" title="{$an.title|escape:html}" target="_blank">{$an.short_title}</a></li>
+                    <!--{/foreach}-->
+
+                </ul>
+            </div>
+            <div id="ECS_tree2_BODY" style="display:none;">
+                <ul>
+                    <!--{foreach from=$article_circle item=ac}-->
+                    <li class="zx_tb"><a href="{$ac.url}" title="{$ac.title|escape:html}" target="_blank">{$ac.short_title}</a></li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <div id="ECS_tree3_BODY" style="display:none;">
+                <ul>
+                    <!--{foreach from=$article_webshop item=aw}-->
+                    <li class="zx_tb"><a href="{$aw.url}" title="{$aw.title|escape:html}" target="_blank">{$aw.short_title}</a></li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+            <div id="ECS_tree4_BODY" style="display:none;">
+                <ul>
+                    <!--{foreach from=$article_setup item=as}-->
+                    <li class="zx_tb"><a href="{$as.url}" title="{$as.title|escape:html}" target="_blank">{$as.short_title}</a></li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        var cycleList = ['ECS_tree1','ECS_tree2','ECS_tree3','ECS_tree4'];
+        var tabFront = 'tabFront';
+        var tabBack = 'tabBack';
+        function cycleShow(obj)
+        {
+            var curObj;
+            var curBody;
+            for (i=0; i < cycleList.length; i++)
+            {
+                curObj = document.getElementById(cycleList[i]);
+                curBody = document.getElementById(cycleList[i] + '_BODY');
+                if (obj.id == curObj.id)
+                {
+                    curObj.className = tabFront;
+                    curBody.style.display = "";
+                }
+                else
+                {
+                    curObj.className = tabBack;
+                    curBody.style.display = "none";
+                }
+            }
+        }
+        // 添加事件
+        for (i=0; i< cycleList.length; i++)
+        {
+            document.getElementById(cycleList[i]).onmousemove = function()
+            {
+                cycleShow(this);
+            };
+        }
+        //]]>
+    </script>
+    <div class="f_r" style="width:264px; margin-left:5px;">
+        <div><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
+        <div>
+            <div class="f_l"><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
+        </div>
+    </div>
 </div>
-<div class="be_bot"></div>
+<div class="blank5"></div>
+<div class="block_1 clearfix">
+    <div class="be_top"><a href="http://www.ddecshop.com/category.html" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
+    <div class="be_mid">
+        <!--{foreach from=$new_goods item=goods}-->
+        <div class="goodsItem_re" onMouseOver="showG('G_{$goods.id}','s')" onMouseOut="showG('G_{$goods.id}','h')">
+            <ul>
+                <li>
+                    <a href="{$goods.url}" class="pics" title="{$goods.name|escape:html}" target="_blank"><img src="{$goods.goods_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
+                    <p id="G_{$goods.id}" style="display:none;">{$goods.short_style_name}</p>
+                </li>
+            </ul>
+        </div>
+        <!--{/foreach}-->
+
+
+    </div>
+    <div class="be_bot"></div>
 </div>
 
-
-<div class="blank"></div>
 <div class="block_1 clearfix" >
     <div class="friend-links">
         <strong>友情链接：</strong>
         <a target="_blank" href="http://www.taobao.com/">淘宝网</a>
         <a target="_blank" href="http://www.alipay.com">支付宝</a>
         <a target="_blank" href="http://www.ecshop.com">ecshop</a>
+        <a target="_blank" href="http://shuang.ddecshop.com">爽歪歪成人用品</a>
+        <a target="_blank" href="http://gift.ddecshop.com">乐影鲜花网</a>
     </div>
 
 
@@ -183,5 +186,43 @@ picrun_ini()
 
 </div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+    (function($) {
+        $(function() {
+            $('.jcarousel').jcarousel();
+
+            $('.jcarousel-control-prev')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '-=1'
+                    });
+
+            $('.jcarousel-control-next')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '+=1'
+                    });
+
+            $('.jcarousel-pagination')
+                    .on('jcarouselpagination:active', 'a', function() {
+                        $(this).addClass('active');
+                    })
+                    .on('jcarouselpagination:inactive', 'a', function() {
+                        $(this).removeClass('active');
+                    })
+                    .jcarouselPagination();
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
