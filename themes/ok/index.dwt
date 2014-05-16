@@ -12,6 +12,7 @@
     <link href="/themes/ok/jcarousel.basic.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="/js/jquery1.10.js"></script>
     <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="/js/jcarousel.basic.js"></script>
 
     {insert_scripts files='common.js,index.js'}
 
@@ -189,45 +190,6 @@
 
 </div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
-<script type="text/javascript">
-    (function($) {
-        $(function() {
-            $('.jcarousel').jcarousel();
-            $('#j_hot').jcarousel();
-            $('.jcarousel-control-prev')
-                    .on('jcarouselcontrol:active', function() {
-                        $(this).removeClass('inactive');
-                    })
-                    .on('jcarouselcontrol:inactive', function() {
-                        $(this).addClass('inactive');
-                    })
-                    .jcarouselControl({
-                        target: '-=1'
-                    });
 
-            $('.jcarousel-control-next')
-                    .on('jcarouselcontrol:active', function() {
-                        $(this).removeClass('inactive');
-                    })
-                    .on('jcarouselcontrol:inactive', function() {
-                        $(this).addClass('inactive');
-                    })
-                    .jcarouselControl({
-                        target: '+=1'
-                    });
-            $('.jcarousel-pagination')
-                    .on('jcarouselpagination:active', 'a', function() {
-                        $(this).addClass('active');
-                    })
-                    .on('jcarouselpagination:inactive', 'a', function() {
-                        $(this).removeClass('active');
-                    })
-                    .jcarouselPagination();
-
-
-
-        });
-    })(jQuery);
-</script>
 </body>
 </html>
