@@ -25,11 +25,12 @@
 <body >
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="block_1 clearfix">
-    <div class="jcarousel">
+    <div class="jcarousel" >
                 <ul>
                     <li><a href="http://ddecshop.com/goods-310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
                     <li><a href="http://ddecshop.com/goods-312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
                 </ul>
+
         <p class="jcarousel-pagination"></p>
     </div>
 
@@ -45,18 +46,20 @@
     <div class="f_l" style="width:330px; overflow:hidden;">
         <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="http://www.ddecshop.com/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
         <div class="hot_c">
-            <div class="f_l" style="margin-left:5px;_margin-left:3px; height:173px;"><A ><img src="themes/ok/images/ar_l.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopUp_1()" onmousedown="ISL_GoUp_1()" onmouseout="ISL_StopUp_1()" alt="查看上一个" /></A></div>
+            <div class="f_l" style="margin-left:5px;_margin-left:3px; height:173px;"><a href="#" class="jcarousel-control-prev">&lsaquo;</a><img src="themes/ok/images/ar_l.gif" style="margin-top:70px; cursor:pointer;" alt="查看上一个" /></A></div>
 
             <div class="f_l hot_c_p">
                 <div  id=ISL_Cont_1 class="c_v">
-                    <DIV class=ScrCont><DIV id=List1_1>
+                    <DIV class=ScrCont>
+                        <DIV class="LIST1-1" id="j_hot">
                         <!--{foreach from=$hot_goods item=goods name=n}-->
                         <a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_img}" class="f_l" width="260"/></a>
-                        <!--{/foreach}--></DIV>
+                        <!--{/foreach}-->
+                        </DIV>
                     </DIV>
                 </div>
             </div>
-            <div class="f_r" style="margin-right:5px;_margin-right:3px; height:173px;"><A><img src="themes/ok/images/ar_r.gif" style="margin-top:70px; cursor:pointer;" onmouseup="ISL_StopDown_1()"  onmousedown="ISL_GoDown_1()" onmouseout="ISL_StopDown_1()" alt="查看下一个"/></A></div>
+            <div class="f_r" style="margin-right:5px;_margin-right:3px; height:173px;"> <a href="#" class="jcarousel-control-next">&rsaquo;</a><img src="themes/ok/images/ar_r.gif" style="margin-top:70px; cursor:pointer;"  alt="查看下一个"/></A></div>
 
         </div>
         <div style=" background-image:url(themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
@@ -190,7 +193,7 @@
     (function($) {
         $(function() {
             $('.jcarousel').jcarousel();
-
+            $('#j_hot').jcarousel();
             $('.jcarousel-control-prev')
                     .on('jcarouselcontrol:active', function() {
                         $(this).removeClass('inactive');
@@ -212,7 +215,6 @@
                     .jcarouselControl({
                         target: '+=1'
                     });
-
             $('.jcarousel-pagination')
                     .on('jcarouselpagination:active', 'a', function() {
                         $(this).addClass('active');
@@ -221,6 +223,9 @@
                         $(this).removeClass('active');
                     })
                     .jcarouselPagination();
+
+
+
         });
     })(jQuery);
 </script>
