@@ -807,8 +807,8 @@ width:100%; height:210px;top:0px; left:0px;POSITION: absolute;}
  FLOAT: left
 }
 .hot_t {background-image:url(images/hot_tt.jpg); background-repeat:no-repeat; height:36px;overflow:hidden;}
-.hot_c {background-image:url(images/hot_mid.gif); background-repeat:repeat-y; height:173px;}
-.hot_c_p {border:1px #F7F7F7 solid; width:260px; height:160px; margin-top:7px;overflow:hidden;}
+.hot_c {background-image:url(images/hot_mid.gif); background-repeat:repeat-y; height:173px; width:330px;display: inline-block}
+.hot_c_p {border:1px #F7F7F7 solid; width:260px; height:160px; margin-top:7px;overflow:hidden;margin-left: 32px}
 .c_v{width:260px; height:160px;overflow:hidden; float:left;}
 
 
@@ -900,3 +900,128 @@ text-align: center;
 .nav-list .hot{background-position:-128px -150px}.nav-list .new{background-position:-128px -200px}
 
 .head .wp{position:relative}.head .header-rearch-submit:hover{background-position:0 -660px}
+
+
+
+
+/*article left*/
+
+.user_con{
+    width:980px; margin:0px auto;
+}
+.user_left{
+    width:207px; float:left;
+}
+.user_left a{
+    color:#666;
+    text-decoration:none
+}
+.user_left a:hover{
+    color:#900;
+    text-decoration:underline
+}
+
+/*常见问题*/
+.user_left_wt_con{
+    width:207px; float:left; margin-top:12px
+}
+.user_left_wt_title{
+    height:28px; line-height:28px; padding-left:15px; font-size:15px; color:#FFF; background-color:#CC0033; cursor:pointer;
+}
+.user_left_wt_title .jia{
+    float:right; width:60px; text-align:center; height:28px; line-height:28px;
+}
+.user_left_wt_conDiv{
+    float:left;width:187px;border-bottom:1px #DCDCDC solid;border-left:1px #DCDCDC solid;border-right:1px #DCDCDC solid; clear:both;
+}
+.user_left_wt_conDiv ul{
+    background-color:#FFF
+}
+.user_left_wt_conDiv ul li{
+    height:30px; line-height:30px; font-size:14px; border-bottom:1px #DCDCDC solid; padding-left:20px;
+}
+
+.user_left_wt_conDiv span{font-size:13px; color:#F00}
+
+
+#user_last{
+    border-bottom:0px;
+}
+/*右侧样式*/
+.user_right{
+    width:763px; float:left; margin-left:10px;  margin-bottom:10px;
+}
+.right_title{
+    height:35px; line-height:35px; padding-right:10px; border:1px #dedede solid; background-color:#FFF; margin-bottom:10px; padding-left:10px;  width:741px;
+}
+.right_title_qicai{
+    font-size:18px; float:left; letter-spacing:5px; font-family:微软雅黑; color:#666;
+}
+.right_title_line{
+    height:5px; width:757px; font-size:5px; background-color:#EC1A5B
+}
+.right_con{
+    width:761px; margin:0px auto;background-color:#FFF;border:1px #dcdcdc solid
+}
+
+.proli_t{ border-bottom:1px #DEDEDE solid; height:35px; line-height:30px; font-size:14px; color:#555; padding-left:10px}
+.proli_c{border-bottom:1px #DEDEDE solid; font-size:14px; color:#555; padding-left:10px}
+.t_title{font-size:15px}
+
+#tb_list ul{
+    margin-left:15px;
+}
+#tb_list .imgul{
+    margin:0px auto
+}
+#tb_list .imgul li{
+    margin-top:5px; margin-bottom:5px
+}
+.xnhb_dis{
+    width:716px; height:50px; line-height:50px; padding-left:12px; color:#900; border:1px #dcdcdc solid; background-color:#f8f8f8; margin:0px auto; margin-top:20px
+
+}
+.user_yh_news{
+    width:358px; margin-top:10px; border:1px #dcdcdc solid; float:left; padding-bottom:10px
+}
+.user_yh_news a{
+    color:#666; text-decoration:none; font-size:13px
+}
+.user_yh_news a:hover{
+    text-decoration:underline; color:#C30
+}
+.user_news{
+    width:358px; margin-left:10px; float:left; margin-top:10px; border:1px #dcdcdc solid; padding-bottom:10px
+}
+.user_news a{
+    color:#666; text-decoration:none;
+    font-size:13px
+}
+.userOpayADiv{width:120px; height:30px; background-color:#E43B3E; color:#FFF; line-height:30px; text-align:center; font-size:15px; cursor:pointer; border-radius:3px;}
+.user_news a:hover{
+    text-decoration:underline; color:#C30
+}
+.user_news_title{ height:30px; border-bottom:1px #dcdcdc solid; background-color:#f8f8f8; padding-left:10px; line-height:30px; font-size:15px
+}
+.user_news_list{margin-top:10px; margin-left:20px}
+.user_news_list li{ height:25px;  line-height:25px; padding-left:20px; background:url(/img/user_dian.jpg) no-repeat 3px 9px;}
+
+.inputclass{border:#DF87AF 1px solid; height:20px; line-height:20px}
+
+.user_red_title{
+    height:32px; line-height:32px; background-color:#E43B3E;  font-family:微软雅黑; font-size:15px; text-align:center; float:left;
+}
+.order_sm{
+    width:710px; border:1px #dcdcdc solid; line-height:20px; padding:10px; background-color:#F8F8F8; font-size:13px
+}
+
+.bangzhu_title{
+    height:60px; line-height:60px; font-size:16px; font-weight:600; text-align:center; color:#C00
+}
+.bangzhu_con{
+    line-height:20px; width:680px; margin:0px auto; font-size:13px; color:#666;
+    word-wrap:break-word;
+
+}
+
+.leftdis_ok{ background:url(/images/user_left_bg.jpg)}

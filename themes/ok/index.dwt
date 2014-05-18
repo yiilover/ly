@@ -47,29 +47,26 @@
     <div class="f_l" style="width:330px; overflow:hidden;">
         <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="http://www.ddecshop.com/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
         <div class="hot_c">
-            <div class="f_l" style="margin-left:5px;_margin-left:3px; height:173px;"><a href="#" class="jcarousel-control-prev">&lsaquo;</a><img src="themes/ok/images/ar_l.gif" style="margin-top:70px; cursor:pointer;" alt="查看上一个" /></A></div>
 
-            <div class="f_l hot_c_p">
-                <div  id=ISL_Cont_1 class="c_v">
-                    <DIV class=ScrCont>
-                        <DIV class="LIST1-1" id="j_hot">
-                        <!--{foreach from=$hot_goods item=goods name=n}-->
-                        <a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_img}" class="f_l" width="260"/></a>
-                        <!--{/foreach}-->
-                        </DIV>
+
+                <div class="j-hot-middle">
+                    <DIV class="j-hot">
+                        <ul>
+                            <!--{foreach from=$hot_goods item=goods name=n}-->
+                            <li><a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_img}" class="f_l" width="260"/></a></li>
+                            <!--{/foreach}-->
+                        </ul>
                     </DIV>
                 </div>
-            </div>
-            <div class="f_r" style="margin-right:5px;_margin-right:3px; height:173px;"> <a href="#" class="jcarousel-control-next">&rsaquo;</a><img src="themes/ok/images/ar_r.gif" style="margin-top:70px; cursor:pointer;"  alt="查看下一个"/></A></div>
+            <a href="#" class="j-hot-control-prev" >&nbsp;&lsaquo;&nbsp;</a>
+               <a href="#" class="j-hot-control-next" >&nbsp;&rsaquo;&nbsp;</a>
+
+
 
         </div>
         <div style=" background-image:url(themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
     </div>
-    <SCRIPT type=text/javascript>
-        <!--
-        picrun_ini()
-        //-->
-    </SCRIPT>
+
     <div class="f_l" style="width:313px; margin-left:7px;">
         <div class="zx_t">
             <ul>

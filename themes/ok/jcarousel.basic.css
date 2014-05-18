@@ -61,11 +61,11 @@
     text-shadow: 0 0 1px #000;
     font: 24px/27px Arial, sans-serif;
     -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
     -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
 }
 
 .jcarousel-control-prev {
@@ -110,4 +110,78 @@
 
 .jcarousel-pagination a.active {
     background-position: -41px 0
+}
+
+/*-----------------mystyle----------------------*/
+.j-hot-middle {
+    position: relative;
+    overflow: hidden;
+    width:260px;
+    height: 160px;
+    margin:0 auto;
+}
+.j-hot{
+    padding:10px 0;
+}
+.j-hot ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.j-hot li {
+    float: left;
+}
+.j-hot-control-prev,
+.j-hot-control-next {
+    position: relative;
+    top: -80px;
+    text-align: center;
+    background: #6bbd46;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+.j-hot-control-next:hover {
+    color: #fff;
+}
+.j-hot-control-next:link {
+    color: #fff;
+}
+.j-hot-control-next:visited {
+    color: #fff;
+}
+.j-hot-control-prev:hover {
+    color: #fff;
+}
+.j-hot-control-prev:link {
+    color: #fff;
+}
+.j-hot-control-prev:visited {
+    color: #fff;
+}
+.j-hot-control-prev {
+    left:10px;
+}
+.j-hot-control-next {
+    right:-271px
+}
+.j-hot-control-prev:hover span,
+.j-hot-control-next:hover span {
+    display: block;
+}
+.j-hot-control-prev.inactive,
+.j-hot-control-next.inactive {
+    opacity: .5;
+    cursor: default;
 }

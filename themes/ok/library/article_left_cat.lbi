@@ -1,11 +1,39 @@
 
-<div class="box_1">
-  <div class="lb_bg"><span style=" padding-left:10px;">资讯信息</span></div>
-            <div class="boxCenterList RelaArticle" style="border:1px #970014 solid;">
-              <div style=" border-bottom:1px #EEEEEE dashed;"><a href="http://www.ddecshop.com/article_cat-4.html" >最新公告</a></div>
-              <div style=" border-bottom:1px #EEEEEE dashed;"><a href="http://www.ddecshop.com/article_cat-5.html" >行业动态</a></div>
-              <div style=" border-bottom:1px #EEEEEE dashed;"><a href="http://www.ddecshop.com/article_cat-6.html" >网店推广</a></div>
-              <div style=" border-bottom:1px #EEEEEE dashed;"><a href="http://www.ddecshop.com/article_cat-7.html" >网络创业</a></div>
-            </div>
- </div>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="http://img2.ddecshop.com/js/user_center.js"></script>
+<span id="use_left_con">
+<div class="user_left_wt_con" style="margin-top:0px; ">
+    <div class="user_left_wt_title" id="xszn">
+        <span style="float:left">新手指南</span>
+        <span class="jian" id="xszn_jia">+</span>
+    </div>
 </div>
+<div class="user_left_wt_conDiv" id="xszn_con" style="display: block;">
+    <ul>
+        <li style=""><a href="/news/news_89.html" target="_blank">关于我们</a></li>
+        <li style=""><a href="/news/news_153.html" target="_blank">购买协议</a></li>
+        <li style=""><a href="/news/news_154.html" target="_blank">联系客服</a></li>
+
+        <li id="user_last" style=""><a href="/news/news_157.html" target="_blank">优惠券使用说明</a></li>
+    </ul>
+</div>
+<div style="height:1px; clear:both; line-height:1px; font-size:1px"></div>
+<div class="user_left_wt_con">
+    <div class="user_left_wt_title" id="cjwt">
+        <span style="float:left">售后服务</span>
+        <span class="jia" id="cjwt_jia">+</span>
+    </div>
+</div>
+<div class="user_left_wt_conDiv" id="cjwt_con"  style="display:block">
+    <ul>
+        <li  ><a href="/news/news_43.html" target="_blank"  >产品说明</a></li>
+        <li  ><a href="/news/news_44.html" target="_blank"  >常见问题</a></li>
+        <li  ><a href="/news/news_47.html" target="_blank"  >发票说明</a></li>
+        <li  ><a href="/news/news_53.html" target="_blank"  >如何注册会员及VIP客户</a></li>
+        <li  ><a href="/news/news_55.html" target="_blank"  >先送花后付款</a></li>
+        <li  ><a href="/news/news_56.html" target="_blank"  >鲜花售后服务说明</a></li>
+        <li  ><a href="/news/news_64.html" target="_blank"  >荣获中国B2C电子商务第一名</a></li>
+        <li id="user_last" ><a href="/news/news_163.html" target="_blank"  >关于我们</a></li>
+    </ul>
+</div>
+          </span>
