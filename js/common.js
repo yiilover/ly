@@ -258,7 +258,7 @@ function bidResponse(result)
     alert(result.content);
   }
 }
-
+//LSJ
 /* *
  * 夺宝奇兵最新出价
  */
@@ -499,12 +499,10 @@ function orderQueryResponse(result)
 }
 
 function display_mode(str)
-{ 
+{
     document.getElementById('display').value = str;
-	
     setTimeout(doSubmit, 0);
     function doSubmit() {document.forms['listform'].submit();}
-
 }
 
 function display_mode_wholesale(str)

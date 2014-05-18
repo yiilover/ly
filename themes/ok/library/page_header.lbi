@@ -3,31 +3,6 @@
 var process_request = "正在处理您的请求...";
 </script>
 <script type="text/javascript">
-function addCookie(){　 // 加入收藏夹  
-    if (document.all){   
-        window.external.addFavorite('http://www.ddecshop.com', '上海ecshop模板定制|ecshop二次开发-上海多多模板之家');   
-    }else if (window.sidebar){   
-        window.sidebar.addPanel('上海ecshop模板定制|ecshop二次开发-上海多多模板之家', 'http://www.ddecshop.com', "");   
-    }   
-}   
-  
-function setHomepage(){　 // 设为首页  
-    if (document.all){   
-        document.body.style.behavior = 'url(#default#homepage)';   
-        document.body.setHomePage('http://www.ddecshop.com');   
-    }else if (window.sidebar){   
-        if (window.netscape){   
-            try {   
-                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");   
-            }catch (e) {   
-                alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入about:config,然后将项signed.applets.codebase_principal_support 值该为true");   
-            }   
-        }   
-        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);   
-        prefs.setCharPref('browser.startup.homepage', 'http://www.ddecshop.com');   
-    }   
-}
-
  function addfavorite(obj,url,title) {
   !url ? url = location.href : null;
   !title ? title = document.title : null;
@@ -52,32 +27,15 @@ function setHomepage(){　 // 设为首页
 </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="topbrief">
 <div class="topbrief_mid">
-<p class="sitenav_member"><span class="D90000 rmar5">数据完整的成品商城助您立即开店！</span></p>
+<p class="sitenav_member"><span class="D90000 rmar5">EC整站数据领导者</span></p>
 <p class="sitenav_lovesave"><a href="javascript:void(0);" rel="nofollow" onclick="javascript:addfavorite()" title="收藏本站">收藏本站</a></p>
-<p class="sitenav_help"><a href="http://24ff.taobao.com" target="_blank" title="爱之谷_成人用品商城—帮助中心">淘宝担保交易</a></p>
+<p class="sitenav_help"><a href="http://24ff.taobao.com" rel="nofollow" target="_blank" title="淘宝乐影软件链接">淘宝担保交易</a></p>
 
 <div class="brief_login">
 <script type="text/javascript" src="http://img.ddecshop.com/js/utils.js"></script>
- <font id="ECS_MEMBERZONE">
-
-
+ <!--<font id="ECS_MEMBERZONE">
      {if $user_info}
      <span style=" margin-right:5px;" class="col666 left">{$lang.hello}!</span>
 <span style=" margin-right:5px;" class="left">{$user_info.username}<a style=" color:#666; margin-left:5px;" href="user.php?act=logout">{$lang.user_logout}</a>
@@ -88,24 +46,10 @@ function setHomepage(){　 // 设为首页
 <p class="qqlogin"><a href="javascript:head_qq_login();" target="_blank" style=" color:#D90000;" title="QQ登录">QQ登录</a></p>
      {/if}
 
-
-
-
- </font>
+ </font>-->
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -115,9 +59,14 @@ function setHomepage(){　 // 设为首页
 <div class="block_1 clearfix">
 <div class="top_log"><a href="/" title="ecshop模板"><img src="/images/logo1.jpg" alt="ecshop模板"  border="0" /></a></div>
 <div class="top_r">
-<h1 class="h_1"><a href="/" title="上海多多模板之家">上海多多模板之家</a>(<a href="/" title="上海多多模板之家">上海多多模板之家</a>)专业提供<a href="/" title="ecshop模板">ecshop模板</a>,<a href="/" title="ecshop模板定制">ecshop模板定制</a>,<a href="/" title="ecshop模板制作">ecshop模板制作</a>,<a href="/" title="ecshop模板开发">ecshop模板开发</a>,<a href="/" title="ecshop模板二次开发">ecshop模板二次开发</a>,<a href="/" title="ecshop模板修改">ecshop模板修改</a>,<a href="/" title="ecshop英文模板">ecshop英文模板</a>,<a href="/" title="精品ecshop模板">精品ecshop模板</a>,<a href="/" title="ecshop模板案例">ecshop模板案例</a>,<a href="/" title="ecshop模板演示">ecshop模板演示</a>等服务！
+    <ul class="fl" id="bottom_tag_box">
+        <li class="b_red"><a href="" target="_blank"><img src="/images/b1.jpg"></a></li>
+        <li class="b_orange"><a href="" target="_blank"><img src="/images/b2.jpg"></a></li>
+        <li class="b_green"><a href="" target="_blank"><img src="/images/b3.jpg"></a></li>
+        <li class="b_gb"><a href="" target="_blank"><img src="/images/b4.jpg"></a></li>
+        <li class="b_blue"><a href="" target="_blank"><img src="/images/b5.jpg"></a></li>
 
-<br>业务咨询：QQ {foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach} [<a href="javascript:setHomepage();" _fcksavedurl="javascript:setHomepage();" >+设为主页</a>  <a href="javascript:addCookie();" _fcksavedurl="javascript:addCookie();">+收藏本站</a>]</h1>
+    </ul>
 </div>
 </div>
 
@@ -125,21 +74,16 @@ function setHomepage(){　 // 设为首页
     <div class="nav-bar">
         <div class="wp cf">
             <ul class="nav-list">
-                <li class="cur"><a href="http://www.ddecshop.com" target="_self" >首页</a></li>
-                <li><a  href="http://www.ddecshop.com/category.html">模板列表</a></li>
+                <li class="cur"><a href="/" target="_self">首页</a></li>
+                <li><a href="http://www.ddecshop.com/category.html">模板列表</a></li>
                 <li><a href="http://www.ddecshop.com/article_cat-5.html">乐影动态</a></li>
-                <li><a   href="/">购买协议</a></li>
-                <li><a  href="/">免费模板</a></li>
-                <li><a  target="_blank" href="http://forum.ddecshop.com">论坛</a></li>
-
+                <li><a href="/">购买协议</a></li>
+                <li><a href="/">免费模板</a></li>
+                <li><a target="_blank" href="http://forum.ddecshop.com">论坛</a></li>
             </ul>
-
         </div>
     </div>
 </div>
-
-
-
 
 </div>
 

@@ -9,7 +9,7 @@
     $(function() {
         $('.jcarousel').jcarousel({wrap: 'circular'})
             .jcarouselAutoscroll({
-                interval: 3000,
+                interval: 5000,
                 autostart: true
             });
         $('.jcarousel-pagination')

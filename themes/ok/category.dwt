@@ -8,6 +8,7 @@
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery1.10.js"></script>
 {insert_scripts files='common.js,index.js'}
 
 
@@ -18,13 +19,11 @@
 </head>
 <body >
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="block_1 clearfix" style="height:80px; line-height:80px; overflow:hidden;">
-<img src="themes/ok/images/tishi.jpg" border="0" alt="温馨提示：正品模板！淘宝支付宝全程交易，买模板，更放心！" />
-</div>
+
 <div class="blank"></div>
 <div class="block_1 clearfix" >
-<div style="border:5px #FFCC00 solid; padding:10px;">
-<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#000000; font-weight:bold;">按分类：</font>
+<div style="padding:10px;">
+<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#666; font-weight:bold;">按分类：</font>
 <!--{foreach from=$categories item=cat}-->
 <a href="{$cat.url}" style="{$cat.style}">{$cat.name}</a>&nbsp;
 
@@ -34,7 +33,7 @@
 <!--{/foreach}-->
 </div>
 
-<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#000000; font-weight:bold;">按价格：</font>
+<div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#666; font-weight:bold;">按价格：</font>
 			<!--{foreach from=$price_grade item=grade}-->
 				<!-- {if $grade.selected} -->
 				<a style="color:#FF0000">{$grade.price_range}</a>&nbsp;&nbsp;
@@ -46,7 +45,7 @@
 
 
 <div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;">
-<font style=" color:#000000; font-weight:bold;">按颜色：</font>
+<font style=" color:#666; font-weight:bold;">按颜色：</font>
 			<!--{foreach from=$filter_attr_list item=filter_attr}-->
       
 			
@@ -61,7 +60,7 @@
       <!--{/foreach}-->
 </div>
 
-<div style=" padding-bottom:5px; padding-top:5px; "><font style=" color:#0000FF; font-weight:bold;">按推荐：</font>
+<div style=" padding-bottom:5px; padding-top:5px; "><font style=" color:#666; font-weight:bold;">按推荐：</font>
  <!--{foreach from=$best_goods item=goods}-->
 <a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.name2}</a>&nbsp;
  <!--{/foreach}-->

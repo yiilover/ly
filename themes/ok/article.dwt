@@ -19,14 +19,13 @@
 
 <div class="blank"></div>
 <div class="block_2 clearfix">
-  
+
   <div class="AreaL">
 
 
 <div class="box">
 <!-- #BeginLibraryItem "/library/article_left_cat.lbi" --><!-- #EndLibraryItem -->
-
-  </div>
+ </div>
 
   </div>
   <div class="AreaR" >
@@ -35,18 +34,18 @@
 
       <div style=" background-color:#fff; padding:0;">
          <div class="tc" style="padding:8px;">
-         <font class="f5 f6" style=" line-height:40px;">{$article.title|escape:html}</font><br /><font class="f3">来源：{$article.author|escape:html} 时间：{$article.add_time} </font>
+         <font style="color:#D90000; font-size: 14px; font-weight: bold; line-height:40px;">{$article.title|escape:html}</font><br /><font class="f3">来源：{$article.author|escape:html} 时间：{$article.add_time} </font>
          </div>
-                   <div style="padding:8px; line-height:180%">
+                   <div style="padding:8px; line-height:180%; min-height: 700px">
 
 		   {$article.content}
 		  </div>
                            <div style="padding:8px; margin-top:15px; text-align:left; border-top:1px solid #ccc;">
-         
+
                   <!-- 上一篇文章 -->
           {if $next_article}
             {$lang.next_article}:<a href="{$next_article.url}" class="f6">{$next_article.title}</a>
-          {/if}           
+          {/if}
           <!-- 下一篇文章 -->
           {if $prev_article}
             {$lang.prev_article}:<a href="{$prev_article.url}" class="f6">{$prev_article.title}</a>
@@ -57,7 +56,7 @@
   </div>
 
   </div>
-  
+
 </div>
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --></body>

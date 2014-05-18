@@ -16,37 +16,14 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="block_2 clearfix">
-  <div style="position: relative;">
-  <img src="themes/ok/images/pro/vancl.jpg" width="920" height="300" border="0"   style=""/>
-  <a href="http://www.ddecshop.com/category.html" style=" cursor:pointer;"><div class="pro_tt"></div></a>
-  </div>
-  </div>
-<div class="blank"></div>
+
 <div class="block_2 clearfix">
   
   <div class="AreaL">
-
-<script type="text/javascript" src="js/transport.js"></script>
-<div class="box">
-
-<div class="box_1">
-  <div class="lb_bg"><span style="padding-left: 10px;">服务导航</span></div>
-  <div style="border: 1px solid rgb(151, 0, 20);" class="boxCenterList RelaArticle">
-    <div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-1.html">定制模板</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-425.html">域名空间</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-2.html">网店套餐</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-3.html">服务报价</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-4.html">购买须知</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-5.html">联系我们</a></div>
-	<div style="border-bottom: 1px dashed rgb(238, 238, 238);"><a href="http://www.ddecshop.com/article-426.html">二次开发</a></div>
+      <div class="box">
+          <!-- #BeginLibraryItem "/library/article_left_cat.lbi" --><!-- #EndLibraryItem -->
+      </div>
   </div>
- </div>
-
-</div>
-<div class="blank5"></div>
-<div style="width:189px; height:161px; overflow:hidden; background-image:url(themes/ok/images/tel.gif); background-repeat:no-repeat;">
-</div>  </div>
   
   
   <div class="AreaR" >
@@ -54,7 +31,7 @@
 
 
 <div style="height: 44px; background-image: url(themes/OK/images/lb_tt.gif); background-position: center center; background-repeat: no-repeat; text-align: left; line-height: 44px; padding-left: 30px; font-size: 14px;"><strong>{$article.title|escape:html}</strong></div>
-<div style="min-height: 40px; background-image: url(themes/OK/images/lb_mid.gif); background-position: center center; background-repeat: repeat-y;">
+<div style="min-height: 700px; background-image: url(themes/OK/images/lb_mid.gif); background-position: center center; background-repeat: repeat-y; ">
 
 		   {$article.content}
 		  </div>

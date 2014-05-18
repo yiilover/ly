@@ -10,30 +10,24 @@
 </div>
 <div class="user_left_wt_conDiv" id="xszn_con" style="display: block;">
     <ul>
-        <li style=""><a href="/news/news_89.html" target="_blank">关于我们</a></li>
-        <li style=""><a href="/news/news_153.html" target="_blank">购买协议</a></li>
-        <li style=""><a href="/news/news_154.html" target="_blank">联系客服</a></li>
-
-        <li id="user_last" style=""><a href="/news/news_157.html" target="_blank">优惠券使用说明</a></li>
+        <li><a href="http://www.ddecshop.com/article-427.html">关于我们</a></li>
+        <li><a href="http://www.ddecshop.com/article-428.html" >购买协议</a></li>
+        <li><a href="http://www.ddecshop.com/article-426.html" >二次开发</a></li>
+        <li><a href="http://www.ddecshop.com/article-429.html" >常见问题</a></li>
+        <li id="user_last"><a href="http://www.ddecshop.com/article-5.html">联系客服</a></li>
     </ul>
 </div>
 <div style="height:1px; clear:both; line-height:1px; font-size:1px"></div>
 <div class="user_left_wt_con">
     <div class="user_left_wt_title" id="cjwt">
-        <span style="float:left">售后服务</span>
+        <span style="float:left">加入我们</span>
         <span class="jia" id="cjwt_jia">+</span>
     </div>
 </div>
 <div class="user_left_wt_conDiv" id="cjwt_con"  style="display:block">
     <ul>
-        <li  ><a href="/news/news_43.html" target="_blank"  >产品说明</a></li>
-        <li  ><a href="/news/news_44.html" target="_blank"  >常见问题</a></li>
-        <li  ><a href="/news/news_47.html" target="_blank"  >发票说明</a></li>
-        <li  ><a href="/news/news_53.html" target="_blank"  >如何注册会员及VIP客户</a></li>
-        <li  ><a href="/news/news_55.html" target="_blank"  >先送花后付款</a></li>
-        <li  ><a href="/news/news_56.html" target="_blank"  >鲜花售后服务说明</a></li>
-        <li  ><a href="/news/news_64.html" target="_blank"  >荣获中国B2C电子商务第一名</a></li>
-        <li id="user_last" ><a href="/news/news_163.html" target="_blank"  >关于我们</a></li>
+        <li><a href="http://www.ddecshop.com/article-430.html">招聘贤才</a></li>
+        <li id="user_last" ><a href="http://www.ddecshop.com/article-431.html" target="_blank"  >链接交换</a></li>
     </ul>
 </div>
           </span>
