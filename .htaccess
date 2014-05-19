@@ -4,7 +4,7 @@
 </FilesMatch>
 RewriteEngine On
 
-RewriteRule ^item\.htm\?id=([0-9]+)$  goods\.php\?id=$1 [L]
+RewriteRule ^item\.htm$  goods\.php
 
 
 
