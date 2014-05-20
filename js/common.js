@@ -5,6 +5,19 @@ $(function() {
     });
     //$().find('img').trigger('lazyload');
 });
+function showG(idx,tp)
+{
+    var idx=idx;
+    var tp=tp;
+    if (tp=='s')
+    {
+        document.getElementById(idx).style.display='inline';
+    }
+    else
+    {
+        document.getElementById(idx).style.display='none';
+    }
+}
 function addfavorite(obj,url,title) {
     !url ? url = location.href : null;
     !title ? title = document.title : null;

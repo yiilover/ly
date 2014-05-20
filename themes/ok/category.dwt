@@ -9,7 +9,8 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/js/jquery1.10.js"></script>
-{insert_scripts files='common.js'}
+<script type="text/javascript" src="/js/imglazyload.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
 </head>
 <body >
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
@@ -66,7 +67,7 @@
      <div class="goodsItem_re" onMouseOver="showG('G_{$goods.goods_id}','s')" onMouseOut="showG('G_{$goods.goods_id}','h')" style=" margin-left:10px;">
        <ul>
        <li>
-       <a href="/item/{$goods.id}.html" title="{$goods.goods_name|escape:html}"><img src="/{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
+       <a href="/item/{$goods.id}.html" title="{$goods.goods_name|escape:html}"><img src="/images/placeholder.png" lazy-src="/{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
        <p id="G_{$goods.goods_id}" style="display:none;">{$goods.goods_name}</p>
        </li>
        </ul>

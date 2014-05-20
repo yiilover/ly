@@ -30,16 +30,3 @@ for (i=0; i< cycleList.length; i++)
         cycleShow(this);
     };
 }
-function showG(idx,tp)
-{
-    var idx=idx;
-    var tp=tp;
-    if (tp=='s')
-    {
-        document.getElementById(idx).style.display='inline';
-    }
-    else
-    {
-        document.getElementById(idx).style.display='none';
-    }
-}
