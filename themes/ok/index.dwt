@@ -9,9 +9,9 @@
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-<link href="/themes/ok/jcarousel.basic.css" rel="stylesheet" type="text/css" />
+<link href="/disk/jcarousel/css/jcarousel.basic.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/js/jquery1.10.js"></script>
-<script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="/disk/jcarousel/js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="/js/jcarousel.basic.js"></script>
 {insert_scripts files='common.js,index.js'}
 <!--[if lt IE 7]>
@@ -24,8 +24,8 @@
 <div class="block_1 clearfix">
     <div class="jcarousel" >
         <ul>
-            <li><a href="http://ddecshop.com/goods-310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
-            <li><a href="http://ddecshop.com/goods-312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
+            <li><a href="/goods-310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
+            <li><a href="/goods-312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
         </ul>
         <p class="jcarousel-pagination"></p>
     </div>
@@ -37,7 +37,7 @@
 <div class="blank5"></div>
 <div class="block_1 clearfix">
     <div class="f_l" style="width:330px; overflow:hidden;">
-        <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="http://www.ddecshop.com/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
+        <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
         <div class="hot_c">
                 <div class="j-hot-middle">
                     <DIV class="j-hot">
@@ -51,15 +51,15 @@
             <a href="#" class="j-hot-control-prev" >&nbsp;&lsaquo;&nbsp;</a>
                <a href="#" class="j-hot-control-next" >&nbsp;&rsaquo;&nbsp;</a>
         </div>
-        <div style=" background-image:url(themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
+        <div style=" background-image:url(/themes/ok/images/hot_bot.gif); background-repeat:no-repeat; height:6px; overflow:hidden;"></div>
     </div>
     <div class="f_l" style="width:313px; margin-left:7px;">
         <div class="zx_t">
             <ul>
-                <li id="ECS_tree1" class=" tabFront"><a href="http://www.ddecshop.com/article_cat-4.html" target="_blank">最新公告</a></li>
-                <li id="ECS_tree2" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-5.html" target="_blank">行业动态</a></li>
-                <li id="ECS_tree3" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-6.html" target="_blank">网店推广</a></li>
-                <li id="ECS_tree4" class=" tabBack"><a href="http://www.ddecshop.com/article_cat-7.html" target="_blank">网络创业</a></li>
+                <li id="ECS_tree1" class=" tabFront"><a href="/article_cat-4.html" target="_blank">最新公告</a></li>
+                <li id="ECS_tree2" class=" tabBack"><a href="/article_cat-5.html" target="_blank">行业动态</a></li>
+                <li id="ECS_tree3" class=" tabBack"><a href="/article_cat-6.html" target="_blank">网店推广</a></li>
+                <li id="ECS_tree4" class=" tabBack"><a href="/article_cat-7.html" target="_blank">网络创业</a></li>
             </ul>
         </div>
         <div class="zx_c">
@@ -94,15 +94,15 @@
         </div>
     </div>
     <div class="f_r" style="width:264px; margin-left:5px;">
-        <div><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
+        <div><a href="/goods-259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
         <div>
-            <div class="f_l"><a href="http://www.ddecshop.com/goods-259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
+            <div class="f_l"><a href="/goods-259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
         </div>
     </div>
 </div>
 <div class="blank5"></div>
 <div class="block_1 clearfix">
-    <div class="be_top"><a href="http://www.ddecshop.com/category.html" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
+    <div class="be_top"><a href="/category.html" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
     <div class="be_mid">
         <!--{foreach from=$new_goods item=goods}-->
         <div class="goodsItem_re" onMouseOver="showG('G_{$goods.id}','s')" onMouseOut="showG('G_{$goods.id}','h')">
