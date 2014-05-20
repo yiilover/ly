@@ -1,70 +1,38 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<script type="text/javascript">
-var process_request = "正在处理您的请求...";
-</script>
-<script type="text/javascript">
- function addfavorite(obj,url,title) {
-  !url ? url = location.href : null;
-  !title ? title = document.title : null;
-  try{
-   window.external.addFavorite(url, title);
-   return false;
-  }catch(e){
-   try{
-    window.sidebar.addPanel(title, url, "");
-    return false;
-   }catch(e){
-    alert("加入收藏失败，请使用Ctrl+D进行添加");
-    if(location.href.toLowerCase().indexOf(obj.href.toLowerCase(),0)>=0){return false;}
-   }
-  }
- }
-
- var qqLoginWin;
- function head_qq_login(){
-     qqLoginWin = window.open("/qq/login.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
- }
-</script>
-
-
 <div class="topbrief">
 <div class="topbrief_mid">
 <p class="sitenav_member"><span class="D90000 rmar5">EC整站数据领导者</span></p>
 <p class="sitenav_lovesave"><a href="javascript:void(0);" rel="nofollow" onclick="javascript:addfavorite()" title="收藏本站">收藏本站</a></p>
-<p class="sitenav_help"><a href="http://24ff.taobao.com" rel="nofollow" target="_blank" title="淘宝乐影软件链接">淘宝担保交易</a></p>
-
+<p class="sitenav_help"><a href="http://24ff.taobao.com" rel="nofollow" target="_blank" title="淘宝链接">淘宝担保交易</a></p>
 <div class="brief_login">
-<script type="text/javascript" src="http://img.ddecshop.com/js/utils.js"></script>
- <!--<font id="ECS_MEMBERZONE">
-     {if $user_info}
-     <span style=" margin-right:5px;" class="col666 left">{$lang.hello}!</span>
-<span style=" margin-right:5px;" class="left">{$user_info.username}<a style=" color:#666; margin-left:5px;" href="user.php?act=logout">{$lang.user_logout}</a>
-     {else}
-<p class="register"><a href="/user.php" target="_blank" title="注册">注册</a></p>
-<p class="bord_gray"><img src="http://img.ddecshop.com/images/index_new/bord_gray.jpg"></p>
-<p class="login"><a href="/user.php" target="_blank" title="登录">登录</a></p>
-<p class="qqlogin"><a href="javascript:head_qq_login();" target="_blank" style=" color:#D90000;" title="QQ登录">QQ登录</a></p>
-     {/if}
+    <!--<script type="text/javascript" src="http://img.ddecshop.com/js/utils.js"></script>
+     <font id="ECS_MEMBERZONE">
+         {if $user_info}
+         <span style=" margin-right:5px;" class="col666 left">{$lang.hello}!</span>
+    <span style=" margin-right:5px;" class="left">{$user_info.username}<a style=" color:#666; margin-left:5px;" href="user.php?act=logout">{$lang.user_logout}</a>
+         {else}
+    <p class="register"><a href="/user.php" target="_blank" title="注册">注册</a></p>
+    <p class="bord_gray"><img src="http://img.ddecshop.com/images/index_new/bord_gray.jpg"></p>
+    <p class="login"><a href="/user.php" target="_blank" title="登录">登录</a></p>
+    <p class="qqlogin"><a href="javascript:head_qq_login();" target="_blank" style=" color:#D90000;" title="QQ登录">QQ登录</a></p>
+         {/if}
 
- </font>-->
+     </font>-->
 </div>
 </div>
 </div>
-
-
-
 
 <div class="top_d"></div>
 <div  class="blank"></div>
 <div class="block_1 clearfix">
-<div class="top_log"><a href="/" title="ecshop模板"><img src="/images/logo1.jpg" alt="ecshop模板"  border="0" /></a></div>
+<div class="top_log"><a href="/" title="logo"><img src="/images/logo.jpg" alt="logo"  border="0" /></a></div>
 <div class="top_r">
     <ul class="fl" id="bottom_tag_box">
-        <li class="b_red"><a href="" target="_blank"><img src="/images/b1.jpg"></a></li>
-        <li class="b_orange"><a href="" target="_blank"><img src="/images/b2.jpg"></a></li>
-        <li class="b_green"><a href="" target="_blank"><img src="/images/b3.jpg"></a></li>
-        <li class="b_gb"><a href="" target="_blank"><img src="/images/b4.jpg"></a></li>
-        <li class="b_blue"><a href="" target="_blank"><img src="/images/b5.jpg"></a></li>
+        <li class="b_red"><a href="/moban/zonghe/" target="_blank"><img src="/images/b1.jpg"></a></li>
+        <li class="b_orange"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b2.jpg"></a></li>
+        <li class="b_green"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b3.jpg"></a></li>
+        <li class="b_gb"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b4.jpg"></a></li>
+        <li class="b_blue"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b5.jpg"></a></li>
 
     </ul>
 </div>
@@ -74,12 +42,12 @@ var process_request = "正在处理您的请求...";
     <div class="nav-bar">
         <div class="wp cf">
             <ul class="nav-list">
-                <li class="cur"><a href="/" target="_self">首页</a></li>
-                <li><a href="http://www.ddecshop.com/category.html">模板列表</a></li>
+                <li class="cur"><a href="/">首页</a></li>
+                <li><a href="/moban/">商业模板</a></li>
                 <li><a href="http://www.ddecshop.com/article_cat-5.html">乐影动态</a></li>
                 <li><a href="/">购买协议</a></li>
                 <li><a href="/">免费模板</a></li>
-                <li><a target="_blank" href="http://forum.ddecshop.com">论坛</a></li>
+                <li><a href="http://bbs.ddecshop.com" target="_blank">论坛</a></li>
             </ul>
         </div>
     </div>
