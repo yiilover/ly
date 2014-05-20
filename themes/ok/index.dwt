@@ -20,15 +20,15 @@
 <div class="block_1 clearfix">
     <div class="jcarousel" >
         <ul>
-            <li><a href="/goods-310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
-            <li><a href="/goods-312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
+            <li><a href="/item/310.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-1.jpg"></a></li>
+            <li><a href="/item/312.html" target="_blank"><img width="920" height="357" alt="" src="/images/banner-2.jpg"></a></li>
         </ul>
         <p class="jcarousel-pagination"></p>
     </div>
 </div>
 <div class="block_1 clearfix">
     <div style="background-image:url(themes/ok/images/o_bg.gif); background-repeat:repeat-x; height:40px; line-height:40px; border:1px #DBDBDB solid;">
-        <div class="f_l"><img src="/themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1121085742&amp;site=qq&amp;menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E4%B9%90%E5%BD%B1baby&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
+        <div class="f_l"><img src="/themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1838225378&amp;site=qq&amp;menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E4%B9%90%E5%BD%B1baby&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
     </div></div>
 <div class="blank5"></div>
 <div class="block_1 clearfix">
@@ -90,9 +90,9 @@
         </div>
     </div>
     <div class="f_r" style="width:264px; margin-left:5px;">
-        <div><a href="/goods-259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
+        <div><a href="/item/259.html" target="_blank" title="eccshop水果园绿色模板"><img src="themes/OK/images/top1.jpg" class="f_l" width=260 height=181 /></a></div>
         <div>
-            <div class="f_l"><a href="/goods-259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
+            <div class="f_l"><a href="/item/259.html" target="_blank" title="查看详情"><img src="themes/ok/images/xq.jpg" /></a></div><div class="f_r" style="margin-top:3px;"><img src="themes/ok/images/top.jpg" alt="热卖模板 TOP1" /></div>
         </div>
     </div>
 </div>
@@ -116,11 +116,9 @@
 <div class="block_1 clearfix" >
     <div class="friend-links">
         <strong>友情链接：</strong>
-        <a target="_blank" href="http://www.taobao.com/">淘宝网</a>
-        <a target="_blank" href="http://www.alipay.com">支付宝</a>
-        <a target="_blank" href="http://www.ecshop.com">ecshop</a>
-        <a target="_blank" href="http://love.ddecshop.com">爽歪歪成人用品</a>
-        <a target="_blank" href="http://gift.ddecshop.com">乐影鲜花网</a>
+        <!--{foreach from=$txt_links item=link}-->
+        <a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>
+        <!--{/foreach}-->
     </div>
 </div>
 </div>

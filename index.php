@@ -151,7 +151,7 @@ $smarty->assign('str_url',$str_url)  ;
     /* links */
     $links = index_get_links();
 //    $smarty->assign('img_links',       $links['img']);
-//    $smarty->assign('txt_links',       $links['txt']);
+    $smarty->assign('txt_links',       $links['txt']);
 //    $smarty->assign('data_dir',        DATA_DIR);       // 数据目录
 
     /* 首页推荐分类 */
