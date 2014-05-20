@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!Doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,13 +13,9 @@
 <script type="text/javascript" src="/js/jquery1.10.js"></script>
 <script type="text/javascript" src="/disk/jcarousel/js/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="/js/jcarousel.basic.js"></script>
-{insert_scripts files='common.js,index.js'}
-<!--[if lt IE 7]>
-<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
-<![endif]-->
+<script type="text/javascript" src="/js/index.js"></script>
 </head>
 <body>
-
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="block_1 clearfix">
     <div class="jcarousel" >
@@ -32,7 +28,7 @@
 </div>
 <div class="block_1 clearfix">
     <div style="background-image:url(themes/ok/images/o_bg.gif); background-repeat:repeat-x; height:40px; line-height:40px; border:1px #DBDBDB solid;">
-        <div class="f_l"><img src="themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1121085742&amp;site=qq&amp;menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E4%B9%90%E5%BD%B1baby&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
+        <div class="f_l"><img src="/themes/ok/images/ok_t.jpg"  /></div><div class="f_r"><img src="themes/ok/images/online.jpg"  /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1121085742&amp;site=qq&amp;menu=yes"><img src="themes/ok/images/qq_1.gif"  /></a><a target=_blank href="http://www.taobao.com/webww/ww.php?ver=3&amp;touid=%E4%B9%90%E5%BD%B1baby&amp;siteid=cntaobao&amp;status=1&amp;charset=utf-8" ><img src="themes/ok/images/wang_1.gif"  /></a></div>
     </div></div>
 <div class="blank5"></div>
 <div class="block_1 clearfix">
@@ -131,38 +127,3 @@
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 </body>
 </html>
-<script type="text/javascript">
-    //<![CDATA[
-    var cycleList = ['ECS_tree1','ECS_tree2','ECS_tree3','ECS_tree4'];
-    var tabFront = 'tabFront';
-    var tabBack = 'tabBack';
-    function cycleShow(obj)
-    {
-        var curObj;
-        var curBody;
-        for (i=0; i < cycleList.length; i++)
-        {
-            curObj = document.getElementById(cycleList[i]);
-            curBody = document.getElementById(cycleList[i] + '_BODY');
-            if (obj.id == curObj.id)
-            {
-                curObj.className = tabFront;
-                curBody.style.display = "";
-            }
-            else
-            {
-                curObj.className = tabBack;
-                curBody.style.display = "none";
-            }
-        }
-    }
-    // 添加事件
-    for (i=0; i< cycleList.length; i++)
-    {
-        document.getElementById(cycleList[i]).onmousemove = function()
-        {
-            cycleShow(this);
-        };
-    }
-    //]]>
-</script>
