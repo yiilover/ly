@@ -21,8 +21,10 @@ function cycleShow(obj)
         }
     }
 }
+
 for (i=0; i< cycleList.length; i++)
 {
+
     document.getElementById(cycleList[i]).onmousemove = function()
     {
         cycleShow(this);

@@ -7,63 +7,53 @@
 <meta name="Description" content="{$description}" />
 <title>{$goods.goods_name}</title>
 <link rel="shortcut icon" href="favicon.ico" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-{insert_scripts files='common.js,index.js'}
-
-
-
-<!--[if lt IE 7]>
-<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
-<![endif]-->
+<link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/common.js"></script>
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
 <div class="blank"></div>
 <div class="block_1 clearfix">
-<div style="height:20px; background-image:url(themes/ok/images/goods_tt.jpg);background-position:center; background-repeat:no-repeat;"></div>
-<div style="min-height:200px;_height:200px; background-image:url(themes/ok/images/goods_mid.jpg);background-position:center; background-repeat:repeat-y;">
+<div style="height:20px; background-image:url(/themes/ok/images/goods_tt.jpg);background-position:center; background-repeat:no-repeat;"></div>
+<div style="min-height:200px;_height:200px; background-image:url(/themes/ok/images/goods_mid.jpg);background-position:center; background-repeat:repeat-y;">
 <div style="float:left; width:200px; height:200px; margin-left:10px;">
 		<img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" width="180" style=" border:5px #CCCCCC solid;" />
 	</div>
 <div style="float:left; width:700px; height:200px; text-align:left">
 <div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; font-size:14px; font-weight:bold;">{$goods.goods_style_name}</div>
 
-<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;"><img src="themes/ok/images/baozheng.gif" border="0" alt="正品模板！淘宝支付宝全程交易，买模板，更放心！" /> </div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;"><img src="/themes/ok/images/baozheng.gif" border="0" alt="正品模板！淘宝支付宝全程交易，买模板，更放心！" /> </div>
 <div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">商品点击：{$goods.click_count} 次</div>
-<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; color:#FF0000; font-size:14px;" class="url_ys"><a href="{$goods.goods_link}" target="_blank"><img src="themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; color:#FF0000; font-size:14px;" class="url_ys"><a href="{$goods.goods_link}" target="_blank"><img src="/themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
  </div>
-<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">联系客服：QQ {foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach} <a href="http://wpa.qq.com/msgrd?v=3&uin={foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach}&site=qq&menu=yes"; target=_blank; ><img SRC='images/qq.gif' alt="业务咨询" border="0" align="absmiddle" ></a></div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">联系客服：QQ {foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach} <a href="http://wpa.qq.com/msgrd?v=3&uin={foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach}&site=qq&menu=yes" target="_blank" ><img src='/images/qq.gif' alt="业务咨询" border="0" align="absmiddle" ></a></div>
 <div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">模板价格：
 <font style="font-weight:bold; color:#FF0000; font-size:18px;">{$goods.shop_price_formated}</font></div>
 </div>
 </div>
 
-<div style="height:20px; background-image:url(themes/ok/images/goods_bb.jpg);background-position:center; background-repeat:no-repeat;"></div>
+<div style="height:20px; background-image:url(/themes/ok/images/goods_bb.jpg);background-position:center; background-repeat:no-repeat;"></div>
 </div>
 <div class="blank"></div>
-
-
-
-
 <div class="blank"></div>
 <div class="block_1 clearfix">
-<div style="height:45px; background-image:url(themes/ok/images/index_mb_tt_xw.gif);background-position:center; background-repeat:no-repeat;padding-left:30px; font-size:14px; line-height:45px;">
+<div style="height:45px; background-image:url(/themes/ok/images/index_mb_tt_xw.gif);background-position:center; background-repeat:no-repeat;padding-left:30px; font-size:14px; line-height:45px;">
 <strong>详细信息</strong>
 </div>
-<div style="min-height:45px;_height:45px; background-image:url(themes/ok/images/index_mb_mid.gif);background-position:center; background-repeat:repeat-y; ">
+<div style="min-height:45px;_height:45px; background-image:url(/themes/ok/images/index_mb_mid.gif);background-position:center; background-repeat:repeat-y; ">
 <div style=" padding-left:5px; padding-right:5px; padding-top:5px;">
 <center>
 {$goods.goods_desc}
 </center>
 <div class="url_ys" style="text-align:center;height:50px; line-height:50px; margin-top:5px; border-top:1px #CCCCCC dotted;"><a href="{$goods.goods_link}" target="_blank">
 <div class="blank"></div>
-<img src="themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
+<img src="/themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
 </div>
 </div>
 
 </div>
-<div style="height:15px; background-image:url(themes/ok/images/index_mb_bb.gif);background-position:center; background-repeat:no-repeat;float:left; width:100%"></div>
+<div style="height:15px; background-image:url(/themes/ok/images/index_mb_bb.gif);background-position:center; background-repeat:no-repeat;float:left; width:100%"></div>
 </div>
 <div class="blank"></div>
 

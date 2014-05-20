@@ -8,7 +8,7 @@
 <meta property="qc:admins" content="1561272307330706375" />
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
 <link href="/disk/jcarousel/css/jcarousel.basic.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/js/jquery1.10.js"></script>
 <script type="text/javascript" src="/disk/jcarousel/js/jquery.jcarousel.min.js"></script>
@@ -106,7 +106,7 @@
         <div class="goodsItem_re" onMouseOver="showG('G_{$goods.id}','s')" onMouseOut="showG('G_{$goods.id}','h')">
             <ul>
                 <li>
-                    <a href="{$goods.url}" class="pics" title="{$goods.name|escape:html}" target="_blank"><img src="/images/placeholder.png"  lazy-src="{$goods.goods_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
+                    <a href="/item/{$goods.id}.html" class="pics" title="{$goods.name|escape:html}" target="_blank"><img src="/images/placeholder.png"  lazy-src="{$goods.goods_img}" alt="{$goods.name|escape:html}" class="goodsimg" /></a>
                     <p id="G_{$goods.id}" style="display:none;">{$goods.short_style_name}</p>
                 </li>
             </ul>
