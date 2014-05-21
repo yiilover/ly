@@ -16,11 +16,13 @@ RewriteRule ^feed-b([0-9]+)\.xml$       feed\.php\?brand=$1 [L]
 RewriteRule ^feed-type([^-]+)\.xml$       feed\.php\?type=$1 [L]
 RewriteRule ^feed\.xml$                 feed\.php [L]
 
-RewriteRule ^category\.html$                 category\.php [L]
+
 RewriteRule ^moban\/$                category\.php?id=1 [L]
 RewriteRule ^moban\/zonghe\/$                category\.php?id=2 [L]
 RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
-RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
+RewriteRule ^moban\/xiangbao\/$                category\.php?id=5 [L]
+RewriteRule ^moban\/chengren\/$                category\.php?id=7 [L]
+RewriteRule ^moban\/shechipin\/$                category\.php?id=14 [L]
 
 RewriteRule ^category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html$  category\.php\?id=$1&brand=$2&price_min=$3&price_max=$4&filter_attr=$5&page=$6&sort=$7&order=$8 [QSA,L]
 RewriteRule ^category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)(.*)\.html$                            category\.php\?id=$1&brand=$2&price_min=$3&price_max=$4&filter_attr=$5 [QSA,L]

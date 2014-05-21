@@ -41,7 +41,7 @@
                 <DIV class="j-hot">
                     <ul>
                         <!--{foreach from=$hot_goods item=goods name=n}-->
-                        <li><a href="{$goods.url}" target="_blank" title="{$goods.name}"><img src="/images/placeholder.png"  lazy-src="{$goods.goods_img}" class="f_l" width="260"/></a></li>
+                        <li><a href="/item/{$goods.id}.html" target="_blank" title="{$goods.name}"><img src="/images/placeholder.png"  lazy-src="{$goods.goods_img}" class="f_l" width="260"/></a></li>
                         <!--{/foreach}-->
                     </ul>
                 </DIV>
@@ -63,29 +63,29 @@
         <div class="zx_c">
             <div id="ECS_tree1_BODY">
                 <ul>
-                    <!--{foreach from=$article_notice item=an}-->
-                    <li class="zx_tb"><a href="{$an.url}" title="{$an.title|escape:html}" target="_blank">{$an.short_title}</a></li>
+                    <!--{foreach from=$article_notice item=r}-->
+                    <li class="zx_tb"><a href="{$r.url}" title="{$r.title|escape:html}" target="_blank">{$r.short_title}</a></li>
                     <!--{/foreach}-->
                 </ul>
             </div>
             <div id="ECS_tree2_BODY" style="display:none;">
                 <ul>
-                    <!--{foreach from=$article_circle item=ac}-->
-                    <li class="zx_tb"><a href="{$ac.url}" title="{$ac.title|escape:html}" target="_blank">{$ac.short_title}</a></li>
+                    <!--{foreach from=$article_circle item=r}-->
+                    <li class="zx_tb"><a href="{$r.url}" title="{$r.title|escape:html}" target="_blank">{$r.short_title}</a></li>
                     <!--{/foreach}-->
                 </ul>
             </div>
             <div id="ECS_tree3_BODY" style="display:none;">
                 <ul>
-                    <!--{foreach from=$article_webshop item=aw}-->
-                    <li class="zx_tb"><a href="{$aw.url}" title="{$aw.title|escape:html}" target="_blank">{$aw.short_title}</a></li>
+                    <!--{foreach from=$article_webshop item=r}-->
+                    <li class="zx_tb"><a href="{$r.url}" title="{$r.title|escape:html}" target="_blank">{$r.short_title}</a></li>
                     <!--{/foreach}-->
                 </ul>
             </div>
             <div id="ECS_tree4_BODY" style="display:none;">
                 <ul>
-                    <!--{foreach from=$article_setup item=as}-->
-                    <li class="zx_tb"><a href="{$as.url}" title="{$as.title|escape:html}" target="_blank">{$as.short_title}</a></li>
+                    <!--{foreach from=$article_setup item=r}-->
+                    <li class="zx_tb"><a href="{$r.url}" title="{$r.title|escape:html}" target="_blank">{$r.short_title}</a></li>
                     <!--{/foreach}-->
                 </ul>
             </div>
