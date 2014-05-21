@@ -21,6 +21,51 @@
 </div>
 
 <SCRIPT type=text/javascript charset=utf-8 src="/themes/ok/js/sk_utf_gf.js"></SCRIPT>
+<script type="text/javascript">
+    url = location.href.toLowerCase();
+    switch (true) {
+
+        case url.indexOf("moban") > 0 :
+            $(".nav-list li").attr("class","");
+            $(".nav-list li:eq(1)").attr("class","cur");
+            break;
+        case url.indexOf("free") > 0 :
+            $(".nav-list li").attr("class","");
+            $(".nav-list li:eq(2)").attr("class","cur");
+            break;
+        case url.indexOf("agreement") > 0 :
+            $(".nav-list li").attr("class","");
+            $(".nav-list li:eq(3)").attr("class","cur");
+            $(".page-menus li:eq(5)").attr("class","active");
+            break;
+        case url.indexOf("about") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(0)").attr("class","active");
+            break;
+        case url.indexOf("contact") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(1)").attr("class","active");
+            break;
+        case url.indexOf("links") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(2)").attr("class","active");
+            break;
+        case url.indexOf("sitemap") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(3)").attr("class","active");
+            break;
+        case url.indexOf("joinus") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(4)").attr("class","active");
+            break;
+        default:
+            $(".nav-list li").attr("class","");
+            $(".nav-list li:eq(0)").attr("class","cur");
+
+
+    }
+
+</script>
 <div style="display: none">
     <script type="text/javascript">
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");

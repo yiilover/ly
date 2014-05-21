@@ -443,6 +443,13 @@ function get_shop_help()
     return $arr;
 }
 
+/*
+function get_help_tree(){
+    $sql='SELECT * FROM ' .$GLOBALS['ecs']->table('article'). ' WHERE cat_id=2 AND is_open=1';
+    $res = $GLOBALS['db']->getAll($sql);
+    print_r($res);
+}
+*/
 /**
  * 创建分页信息
  *

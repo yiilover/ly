@@ -18,6 +18,7 @@ RewriteRule ^feed\.xml$                 feed\.php [L]
 
 
 RewriteRule ^moban\/$                category\.php?id=1 [L]
+RewriteRule ^free\/$                category\.php?id=16 [L]
 RewriteRule ^moban\/zonghe\/$                category\.php?id=2 [L]
 RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
 RewriteRule ^moban\/xiangbao\/$                category\.php?id=5 [L]

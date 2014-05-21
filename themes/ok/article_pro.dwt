@@ -7,42 +7,59 @@
 <meta name="Description" content="{$description}" />
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|ecshop模板家 ecshop模板 ecshop模板制作 ecshop模板定制 ecshop模板开发 ecshop模板案例 ecshop模板修改 ecshop模板演示" href="feed.xml" />
+<link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
 
-<!--[if lt IE 7]>
-<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
-<![endif]-->
+
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
 <div class="block_2 clearfix">
-  
-  <div class="AreaL">
-      <div class="box">
-          <!-- #BeginLibraryItem "/library/article_left_cat.lbi" --><!-- #EndLibraryItem -->
-      </div>
-  </div>
-  
-  
-  <div class="AreaR" >
+    <div style="height:45px; background-image:url(/themes/ok/images/index_mb_tt_xw.gif);background-position:center; background-repeat:no-repeat;padding-left:30px; font-size:14px; line-height:45px;">
+        <strong>帮助中心</strong>
+    </div>
+    <div style="min-height:650px;_height:45px; background-image:url(/themes/ok/images/index_mb_mid.gif);background-position:center; background-repeat:repeat-y; ">
+        <div style=" padding-left:5px; padding-right:5px; padding-top:5px;">
+        <div class="friend_linkbox">
+        <div class="main cc nosidebar">
+            <div class="page-wrapper">
+                <ul class="page-menus">
+                    <li><a href="/page/about">关于我们</a></li>
+                    <li><a href="/page/contact">联系我们</a></li>
+                    <li><a href="/page/links">友情链接</a></li>
+                    <li><a href="/page/sitemap">网站地图</a></li>
+                    <li><a href="/page/joinus">加入我们</a></li>
+                    <li><a href="/page/agreement">购买须知</a></li>
+                </ul>
+                <div class="page-wrap">
+                    <h3 class="page-title">{$article.title|escape:html}</h3>
+                    <div class="page-content">
+                        {$article.content}
+                    </div>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 
-<div style="height: 44px; background-image: url(themes/OK/images/lb_tt.gif); background-position: center center; background-repeat: no-repeat; text-align: left; line-height: 44px; padding-left: 30px; font-size: 14px;"><strong>{$article.title|escape:html}</strong></div>
-<div style="min-height: 700px; background-image: url(themes/OK/images/lb_mid.gif); background-position: center center; background-repeat: repeat-y; ">
-
-		   {$article.content}
-		  </div>
-<div style="height:13px; background-image:url(themes/OK/images/lb_bb.gif);background-position:center; background-repeat:no-repeat;"></div>
-
-      </div>
-
-
-
-  
+    </div>
+    <div style="height:15px; background-image:url(/themes/ok/images/index_mb_bb.gif);background-position:center; background-repeat:no-repeat;float:left; width:100%"></div>
+    </div>
 </div>
 <div class="blank"></div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --></body>
+<!--.main-wrap,#main End-->
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript">
+    url = location.href.toLowerCase();
+    switch (true) {
+
+    }
+
+</script>
+</body>
 </html>

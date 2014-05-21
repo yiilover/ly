@@ -35,7 +35,7 @@ if (isset($_REQUEST['id']))
 {
     $cat_id = intval($_REQUEST['id']);
 }
-elseif (isset($_REQUEST['category']))
+elseif(isset($_REQUEST['category']))
 {
     $cat_id = intval($_REQUEST['category']);
 }
@@ -46,6 +46,7 @@ else
 
     exit;
 }
+
 //echo $cat_id;die;
 
 /* 初始化分页信息 */
@@ -406,8 +407,12 @@ $smarty->assign('str_url',$str_url)  ;
     assign_pager('category',            $cat_id, $count, $size, $sort, $order, $page, '', $brand, $price_min, $price_max, $display, $filter_attr_str); // 分页
     assign_dynamic('category'); // 动态内容
 }
+if($_REQUEST['id']==16){
+    $smarty->display('category_free.dwt');
+}else{
+    $smarty->display('category.dwt', $cache_id);
+}
 
-$smarty->display('category.dwt', $cache_id);
 
 /*------------------------------------------------------ */
 //-- PRIVATE FUNCTION

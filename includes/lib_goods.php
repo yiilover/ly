@@ -66,7 +66,7 @@ function get_categories_tree($cat_id = 0,$curr_id = 0)
 
         foreach ($res AS $row)
         {
-            if ($row['is_show'])
+            if ($row['is_show'] && $row['cat_name']!='免费模板')
             {
                 $cat_arr[$row['cat_id']]['id']   = $row['cat_id'];
                 $cat_arr[$row['cat_id']]['name'] = $row['cat_id']==1?'全部':$row['cat_name'];
@@ -561,6 +561,12 @@ function get_goods_info($goods_id)
         {
             $row['watermark_img'] =  $watermark_img;
         }
+
+        /*商品图片地址修正*/
+        $goods_img=$row['goods_img'];
+        if(strpos($goods_img,'http')===false) $goods_img='/'.$goods_img;
+
+        $row['goods_img']        = $goods_img;
 
         $row['promote_price_org'] =  $promote_price;
         $row['promote_price'] =  price_format($promote_price);

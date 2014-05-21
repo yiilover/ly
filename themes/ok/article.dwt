@@ -7,7 +7,7 @@
 <meta name="Description" content="{$description}" />
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
 
 
 </head>

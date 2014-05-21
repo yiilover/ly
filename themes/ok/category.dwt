@@ -18,7 +18,9 @@
 <div class="block_1 clearfix" >
 <div style="padding:10px;">
 <div style=" padding-bottom:5px; padding-top:5px; border-bottom:1px #CCCCCC dotted;"><font style=" color:#666; font-weight:bold;">按分类：</font>
+
 <!--{foreach from=$categories item=cat}-->
+
 <a href="{$cat.url}" style="{$cat.style}">{$cat.name}</a>&nbsp;
 
 <!--{foreach from=$cat.cat_id item=child}-->
