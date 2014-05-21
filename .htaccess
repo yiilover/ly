@@ -39,6 +39,12 @@ RewriteRule ^article_cat-([0-9]+)-([0-9]+)(.*)\.html$                   article_
 RewriteRule ^article_cat-([0-9]+)(.*)\.html$                            article_cat\.php\?id=$1   [QSA,L]
 
 RewriteRule ^article-([0-9]+)(.*)\.html$                                article\.php\?id=$1   [QSA,L]
+RewriteRule ^page\/about$                                article\.php\?id=427   [QSA,L]
+RewriteRule ^page\/contact$                                article\.php\?id=5   [QSA,L]
+RewriteRule ^page\/links$                                article\.php\?id=428   [QSA,L]
+RewriteRule ^page\/sitemap$                                article\.php\?id=429   [QSA,L]
+RewriteRule ^page\/joinus$                                article\.php\?id=430   [QSA,L]
+RewriteRule ^page\/agreement$                                article\.php\?id=431   [QSA,L]
 
 RewriteRule ^brand-([0-9]+)-c([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)\.html   brand\.php\?id=$1&cat=$2&page=$3&sort=$4&order=$5 [QSA,L]
 RewriteRule ^brand-([0-9]+)-c([0-9]+)-([0-9]+)(.*)\.html                brand\.php\?id=$1&cat=$2&page=$3 [QSA,L]
