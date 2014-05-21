@@ -1,16 +1,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <div class="footer">
     <div class="footer-links">
-        <a target="_blank" class="item" href="http://www.b5m.com/about">关于我们</a>
-        |
-        <a target="_blank" class="item" href="http://www.ddecshop.com/article-5.html">联系我们</a>
-
-
-        |
-        <a target="_blank" class="item" href="http://www.b5m.com/sitemaps.xml">购买协议</a>
-        |
-        <a target="_blank" class="item" href="http://www.ddecshop.com/sitemaps.xml">站点地图</a>
-
+        <a target="_blank" class="item" href="/page/about">关于我们</a>|
+        <a target="_blank" class="item" href="/page/contact">联系我们</a> |
+        <a target="_blank" class="item" href="/page/links">友情链接</a>|
+        <a target="_blank" class="item" href="/page/sitemap">站点地图</a>|
+        <a target="_blank" class="item" href="/page/joinus">加入我们</a>
     </div>
     <div class="footer-copyright">
         Copyright &copy; 2011-2014 ddecshop.com All rights reserved. Powered by 乐影软件 Co.,Ltd.
@@ -25,10 +20,7 @@
     </div>
 </div>
 
-
-
-
-<SCRIPT type=text/javascript charset=utf-8 src="themes/ok/js/sk_utf_gf.js"></SCRIPT>
+<SCRIPT type=text/javascript charset=utf-8 src="/themes/ok/js/sk_utf_gf.js"></SCRIPT>
 <div style="display: none">
     <script type="text/javascript">
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");

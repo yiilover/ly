@@ -30,9 +30,9 @@
     <ul class="fl" id="bottom_tag_box">
         <li class="b_red"><a href="/moban/zonghe/" target="_blank"><img src="/images/b1.jpg"></a></li>
         <li class="b_orange"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b2.jpg"></a></li>
-        <li class="b_green"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b3.jpg"></a></li>
-        <li class="b_gb"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b4.jpg"></a></li>
-        <li class="b_blue"><a href="/moban/fuzhuang/" target="_blank"><img src="/images/b5.jpg"></a></li>
+        <li class="b_green"><a href="/moban/xiangbao/" target="_blank"><img src="/images/b3.jpg"></a></li>
+        <li class="b_gb"><a href="/moban/chengren/" target="_blank"><img src="/images/b4.jpg"></a></li>
+        <li class="b_blue"><a href="/moban/shechipin/" target="_blank"><img src="/images/b5.jpg"></a></li>
 
     </ul>
 </div>
@@ -44,9 +44,8 @@
             <ul class="nav-list">
                 <li class="cur"><a href="/">首页</a></li>
                 <li><a href="/moban/">商业模板</a></li>
-                <li><a href="http://www.ddecshop.com/article_cat-5.html">乐影动态</a></li>
-                <li><a href="/">购买协议</a></li>
-                <li><a href="/">免费模板</a></li>
+                <li><a href="/agreement">购买协议</a></li>
+                <li><a href="/free/">免费模板</a></li>
                 <li><a href="http://bbs.ddecshop.com" target="_blank">论坛</a></li>
             </ul>
         </div>
