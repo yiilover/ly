@@ -70,6 +70,7 @@ if (!$smarty->is_cached('article.dwt', $cache_id))
     $smarty->assign('email',            $_SESSION['email']);
     $smarty->assign('type',            '1');
     $smarty->assign('promotion_info', get_promotion_info());
+    $smarty->assign('article_recommend_goods', get_article_recommend_goods());
 
     /* 验证码相关设置 */
     if ((intval($_CFG['captcha']) & CAPTCHA_COMMENT) && gd_version() > 0)

@@ -1,33 +1,17 @@
 
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="http://img2.ddecshop.com/js/user_center.js"></script>
-<span id="use_left_con">
-<div class="user_left_wt_con" style="margin-top:0px; ">
-    <div class="user_left_wt_title" id="xszn">
-        <span style="float:left">新手指南</span>
-        <span class="jian" id="xszn_jia">+</span>
-    </div>
-</div>
-<div class="user_left_wt_conDiv" id="xszn_con" style="display: block;">
-    <ul>
-        <li><a href="http://www.ddecshop.com/article-427.html">关于我们</a></li>
-        <li><a href="http://www.ddecshop.com/article-428.html" >购买协议</a></li>
-        <li><a href="http://www.ddecshop.com/article-426.html" >二次开发</a></li>
-        <li><a href="http://www.ddecshop.com/article-429.html" >常见问题</a></li>
-        <li id="user_last"><a href="http://www.ddecshop.com/article-5.html">联系客服</a></li>
-    </ul>
-</div>
-<div style="height:1px; clear:both; line-height:1px; font-size:1px"></div>
-<div class="user_left_wt_con">
-    <div class="user_left_wt_title" id="cjwt">
-        <span style="float:left">加入我们</span>
-        <span class="jia" id="cjwt_jia">+</span>
-    </div>
-</div>
-<div class="user_left_wt_conDiv" id="cjwt_con"  style="display:block">
-    <ul>
-        <li><a href="http://www.ddecshop.com/article-430.html">招聘贤才</a></li>
-        <li id="user_last" ><a href="http://www.ddecshop.com/article-431.html" target="_blank"  >链接交换</a></li>
-    </ul>
-</div>
-          </span>
+<ul class="proul2">
+    <h3>模板推荐</h3>
+    {foreach from=$article_recommend_goods item=goods}
+    <li style="margin-top:10px; ">
+        <div class="prokuang" style="border: 2px solid rgb(255, 255, 255);">
+            <div class="proDiv2">
+                <div class="proImg"> <a href="/item/{$goods.goods_id}.html" ><img src="{$goods.goods_img}" height="175" width="175" border="0"  style="display: inline;"></a> </div>
+                <div class="proText">
+                    <div class="proTextName"><a href="/item/{$goods.goods_id}.html" >{$goods.goods_name}</a></div>
+                </div>
+            </div>
+        </div>
+    </li>
+{/foreach}
+
+</ul>

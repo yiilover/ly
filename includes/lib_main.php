@@ -443,13 +443,19 @@ function get_shop_help()
     return $arr;
 }
 
-/*
-function get_help_tree(){
-    $sql='SELECT * FROM ' .$GLOBALS['ecs']->table('article'). ' WHERE cat_id=2 AND is_open=1';
+
+function get_article_recommend_goods(){
+    $sql='SELECT * FROM ' .$GLOBALS['ecs']->table('goods'). ' WHERE goods_id IN (309,310,304) ORDER BY goods_id DESC';
     $res = $GLOBALS['db']->getAll($sql);
-    print_r($res);
+    foreach($res as $r){
+        if(strpos($r['goods_img'],'http')===false) $r['goods_img']='/'.$r['goods_img'];
+        $arr[]=$r;
+    }
+
+
+    return $arr;
 }
-*/
+
 /**
  * 创建分页信息
  *

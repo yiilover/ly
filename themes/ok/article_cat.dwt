@@ -17,23 +17,16 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="block_2 clearfix">
-  <div style="position: relative;">
-  <img src="themes/ok/images/pro/vancl.jpg" width="920" height="300" border="0"   style=""/>
-  <a href="category.php?id=1" style=" cursor:pointer;"><div class="pro_tt"></div></a>
-  </div>
-  </div>
-<div class="blank"></div>
+
 <div class="block_2 clearfix">
   
   <div class="AreaL">
 
-<script type="text/javascript" src="js/transport.js"></script>
+
 <div class="box">
 <!-- #BeginLibraryItem "/library/article_left_cat.lbi" --><!-- #EndLibraryItem -->
-<div class="blank5"></div>
-<div style="width:189px; height:161px; overflow:hidden; background-image:url(themes/ok/images/tel.gif); background-repeat:no-repeat;">
-</div>
+
+
 <!--<div class="box">
  <div class="box_1">
  <div style="background-image:url(themes/ok/images/l_kf_bg.gif);background-position:center; background-repeat:no-repeat; width:189px; height:79px;">&nbsp;</div>
@@ -43,7 +36,7 @@
  
  
   </div>
-  
+  </div>
   
   <div class="AreaR">
    

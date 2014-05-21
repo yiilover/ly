@@ -75,6 +75,7 @@ if (!$smarty->is_cached('article_cat.dwt', $cache_id))
     $smarty->assign('hot_goods',            get_recommend_goods('hot'));
     $smarty->assign('promotion_goods',      get_promote_goods());
     $smarty->assign('promotion_info', get_promotion_info());
+    $smarty->assign('article_recommend_goods', get_article_recommend_goods());
 $str_url = str_replace('/','',$_SERVER['REQUEST_URI']);
 $smarty->assign('str_url',$str_url)  ;
     /* Meta */
