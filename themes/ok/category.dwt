@@ -67,7 +67,7 @@
      <div class="goodsItem_re" onMouseOver="showG('G_{$goods.goods_id}','s')" onMouseOut="showG('G_{$goods.goods_id}','h')" style=" margin-left:10px;">
        <ul>
        <li>
-       <a href="/item/{$goods.id}.html" title="{$goods.goods_name|escape:html}"><img src="/images/placeholder.png" lazy-src="/{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
+       <a href="/item/{$goods.id}.html" title="{$goods.goods_name|escape:html}"><img src="/images/placeholder.png" lazy-src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
        <p id="G_{$goods.goods_id}" style="display:none;">{$goods.goods_name}</p>
        </li>
        </ul>

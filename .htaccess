@@ -18,7 +18,7 @@ RewriteRule ^feed\.xml$                 feed\.php [L]
 
 RewriteRule ^category\.html$                 category\.php [L]
 RewriteRule ^moban\/$                category\.php?id=1 [L]
-RewriteRule ^moban\/zenghe\/$                category\.php?id=2 [L]
+RewriteRule ^moban\/zonghe\/$                category\.php?id=2 [L]
 RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
 RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
 
