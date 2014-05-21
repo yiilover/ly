@@ -8,11 +8,8 @@
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|ecshop模板家 ecshop模板 ecshop模板制作 ecshop模板定制 ecshop模板开发 ecshop模板案例 ecshop模板修改 ecshop模板演示" href="feed.xml" />
 
-<!--[if lt IE 7]>
-<style type="text/css">div,li{behavior:url(themes/ok/iepngfix.htc)}</style>
-<![endif]-->
+
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
