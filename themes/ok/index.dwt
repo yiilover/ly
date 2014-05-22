@@ -54,10 +54,10 @@
     <div class="f_l" style="width:313px; margin-left:7px;">
         <div class="zx_t">
             <ul>
-                <li id="ECS_tree1" class=" tabFront"><a href="/article_cat-4.html" target="_blank">最新公告</a></li>
-                <li id="ECS_tree2" class=" tabBack"><a href="/article_cat-5.html" target="_blank">行业动态</a></li>
-                <li id="ECS_tree3" class=" tabBack"><a href="/article_cat-6.html" target="_blank">网店推广</a></li>
-                <li id="ECS_tree4" class=" tabBack"><a href="/article_cat-7.html" target="_blank">网络创业</a></li>
+                <li id="ECS_tree1" class=" tabFront"><a href="/page/zxgg/" target="_blank">最新公告</a></li>
+                <li id="ECS_tree2" class=" tabBack"><a href="/page/hydt/" target="_blank">行业动态</a></li>
+                <li id="ECS_tree3" class=" tabBack"><a href="/page/wdtg/" target="_blank">网店推广</a></li>
+                <li id="ECS_tree4" class=" tabBack"><a href="/page/wlcy/" target="_blank">网络创业</a></li>
             </ul>
         </div>
         <div class="zx_c">

@@ -18,12 +18,22 @@ RewriteRule ^feed\.xml$                 feed\.php [L]
 
 
 RewriteRule ^moban\/$                category\.php?id=1 [L]
-RewriteRule ^free\/$                category\.php?id=16 [L]
 RewriteRule ^moban\/zonghe\/$                category\.php?id=2 [L]
 RewriteRule ^moban\/fuzhuang\/$                category\.php?id=3 [L]
 RewriteRule ^moban\/xiangbao\/$                category\.php?id=5 [L]
+RewriteRule ^moban\/neiyi\/$                category\.php?id=6 [L]
 RewriteRule ^moban\/chengren\/$                category\.php?id=7 [L]
+RewriteRule ^moban\/lipin\/$                category\.php?id=8 [L]
+RewriteRule ^moban\/jiaju\/$                category\.php?id=9 [L]
+RewriteRule ^moban\/chajiu\/$                category\.php?id=10 [L]
+RewriteRule ^moban\/meizhuang\/$                category\.php?id=11 [L]
+RewriteRule ^moban\/jianfei\/$                category\.php?id=12 [L]
+RewriteRule ^moban\/xianhua\/$                category\.php?id=13 [L]
 RewriteRule ^moban\/shechipin\/$                category\.php?id=14 [L]
+RewriteRule ^moban\/shipin\/$                category\.php?id=15 [L]
+RewriteRule ^free\/$                category\.php?id=16 [L]
+RewriteRule ^moban\/qita\/$                category\.php?id=17 [L]
+
 
 RewriteRule ^category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html$  category\.php\?id=$1&brand=$2&price_min=$3&price_max=$4&filter_attr=$5&page=$6&sort=$7&order=$8 [QSA,L]
 RewriteRule ^category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)(.*)\.html$                            category\.php\?id=$1&brand=$2&price_min=$3&price_max=$4&filter_attr=$5 [QSA,L]
@@ -39,6 +49,9 @@ RewriteRule ^article_cat-([0-9]+)-([0-9]+)-(.+)(.*)\.html$              article_
 RewriteRule ^article_cat-([0-9]+)-([0-9]+)(.*)\.html$                   article_cat\.php\?id=$1&page=$2   [QSA,L]
 RewriteRule ^article_cat-([0-9]+)(.*)\.html$                            article_cat\.php\?id=$1   [QSA,L]
 
+
+
+
 RewriteRule ^article-([0-9]+)(.*)\.html$                                article\.php\?id=$1   [QSA,L]
 RewriteRule ^page\/about$                                article\.php\?id=427   [QSA,L]
 RewriteRule ^page\/contact$                                article\.php\?id=5   [QSA,L]
@@ -46,20 +59,10 @@ RewriteRule ^page\/links$                                article\.php\?id=428   
 RewriteRule ^page\/sitemap$                                article\.php\?id=429   [QSA,L]
 RewriteRule ^page\/joinus$                                article\.php\?id=430   [QSA,L]
 RewriteRule ^page\/agreement$                                article\.php\?id=431   [QSA,L]
+RewriteRule ^page\/zxgg\/$                                article_cat\.php\?id=4   [QSA,L]
+RewriteRule ^page\/hydt\/$                                article_cat\.php\?id=5   [QSA,L]
+RewriteRule ^page\/wdtg\/$                                article_cat\.php\?id=6 [QSA,L]
+RewriteRule ^page\/wlcy\/$                                article_cat\.php\?id=7  [QSA,L]
 
-RewriteRule ^brand-([0-9]+)-c([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)\.html   brand\.php\?id=$1&cat=$2&page=$3&sort=$4&order=$5 [QSA,L]
-RewriteRule ^brand-([0-9]+)-c([0-9]+)-([0-9]+)(.*)\.html                brand\.php\?id=$1&cat=$2&page=$3 [QSA,L]
-RewriteRule ^brand-([0-9]+)-c([0-9]+)(.*)\.html                         brand\.php\?id=$1&cat=$2 [QSA,L]
-RewriteRule ^brand-([0-9]+)(.*)\.html                                   brand\.php\?id=$1 [QSA,L]
 
-RewriteRule ^tag-(.*)\.html                                             search\.php\?keywords=$1 [QSA,L]
-RewriteRule ^snatch-([0-9]+)\.html$                                     snatch\.php\?id=$1 [QSA,L]
-RewriteRule ^group_buy-([0-9]+)\.html$                                  group_buy\.php\?act=view&id=$1 [QSA,L]
-RewriteRule ^auction-([0-9]+)\.html$                                    auction\.php\?act=view&id=$1 [QSA,L]
-
-RewriteRule ^exchange-id([0-9]+)(.*)\.html$                             exchange\.php\?id=$1&act=view [QSA,L]
-RewriteRule ^exchange-([0-9]+)-min([0-9]+)-max([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html$ exchange\.php\?cat_id=$1&integral_min=$2&integral_max=$3&page=$4&sort=$5&order=$6 [QSA,L]
-RewriteRule ^exchange-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html$                         exchange\.php\?cat_id=$1&page=$2&sort=$3&order=$4 [QSA,L]
-RewriteRule ^exchange-([0-9]+)-([0-9]+)(.*)\.html$                                          exchange\.php\?cat_id=$1&page=$2  [QSA,L]
-RewriteRule ^exchange-([0-9]+)(.*)\.html$                                                   exchange\.php\?cat_id=$1  [QSA,L]
 ErrorDocument 404 /error.php
