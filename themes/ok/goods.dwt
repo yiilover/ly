@@ -8,6 +8,7 @@
 <title>{$goods.goods_name}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery1.10.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
 </head>
 <body>

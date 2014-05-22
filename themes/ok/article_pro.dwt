@@ -8,9 +8,7 @@
 <title>{$page_title}</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="/themes/ok/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/js/jquery.js"></script>
-
-
+<script type="text/javascript" src="/js/jquery1.10.js"></script>
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
@@ -57,7 +55,30 @@
 <script type="text/javascript">
     url = location.href.toLowerCase();
     switch (true) {
-
+        case url.indexOf("about") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(0)").attr("class","active");
+            break;
+        case url.indexOf("contact") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(1)").attr("class","active");
+            break;
+        case url.indexOf("links") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(2)").attr("class","active");
+            break;
+        case url.indexOf("sitemap") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(3)").attr("class","active");
+            break;
+        case url.indexOf("joinus") > 0 :
+            $(".page-menus li").attr("class","");
+            $(".page-menus li:eq(4)").attr("class","active");
+            break;
+        case url.indexOf("agreement") > 0 :
+            $(".nav-list li").attr("class","");
+            $(".page-menus li:eq(5)").attr("class","active");
+            break;
     }
 
 </script>
