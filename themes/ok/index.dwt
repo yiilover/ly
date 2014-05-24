@@ -22,8 +22,8 @@
 <div class="block_1 clearfix">
     <div class="jcarousel" >
         <ul>
-            <li><a href="/item/310.html" target="_blank"><img src="/images/placeholder.png"  width="920" height="357" alt="" lazy-src="/images/banner-1.jpg"></a></li>
-            <li><a href="/item/312.html" target="_blank"><img src="/images/placeholder.png"  width="920" height="357" alt="" lazy-src="/images/banner-2.jpg"></a></li>
+            <li><a href="/item/309.html" target="_blank"><img src="/images/placeholder.png"  width="920" height="357" alt="" lazy-src="/images/banner-1.jpg"></a></li>
+            <li><a href="/item/310.html" target="_blank"><img src="/images/placeholder.png"  width="920" height="357" alt="" lazy-src="/images/banner-2.jpg"></a></li>
         </ul>
         <p class="jcarousel-pagination"></p>
     </div>
@@ -35,7 +35,7 @@
 <div class="blank5"></div>
 <div class="block_1 clearfix">
     <div class="f_l" style="width:330px; overflow:hidden;">
-        <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="/category.html" target="_blank" title="更多ecshop模板">更多>></a></span></div>
+        <div class="hot_t"> <span class="f_r" style="margin-top:8px; margin-right:8px;"><a href="/moban/" target="_blank" title="更多ecshop模板">更多>></a></span></div>
         <div class="hot_c">
             <div class="j-hot-middle">
                 <DIV class="j-hot">
@@ -100,7 +100,7 @@
 </div>
 <div class="blank5"></div>
 <div class="block_1 clearfix">
-    <div class="be_top"><a href="/category.html" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
+    <div class="be_top"><a href="/moban/" style=" cursor:pointer;" target="_blank"><div class="list" title="ecshop模板列表"></div></a></div>
     <div class="be_mid">
         <!--{foreach from=$new_goods item=goods}-->
         <div class="goodsItem_re" onMouseOver="showG('G_{$goods.id}','s')" onMouseOut="showG('G_{$goods.id}','h')">

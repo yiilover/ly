@@ -23,7 +23,7 @@
               <table width="98%" border="0" cellpadding="0" cellspacing="0" align="center" >
                 <!-- {foreach from=$artciles_list item=article} -->
                 <tr>
-                <td width="77%" height="25" bgcolor="#ffffff" style=" border-bottom:1px #CCCCCC dashed">&nbsp;&nbsp;<a href="{$article.url}" title="{$article.title|escape:html}" target="_blank" class="f6">{$article.short_title}</a><font color="#999999"></font></td>
+                <td width="77%" height="25" bgcolor="#ffffff" style=" border-bottom:1px #CCCCCC dashed">&nbsp;&nbsp;<a href="/{$article.url}" title="{$article.title|escape:html}" target="_blank" class="f6">{$article.short_title}</a><font color="#999999"></font></td>
                   <td width="23%" align="center" bgcolor="#ffffff" style=" border-bottom:1px #CCCCCC dashed">{$article.add_time}</td>
                 </tr>
                 <!-- {/foreach} -->

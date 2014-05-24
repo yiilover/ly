@@ -29,8 +29,8 @@
 <div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed; color:#FF0000; font-size:14px;" class="url_ys"><a href="{$goods.goods_link}" target="_blank"><img src="/themes/ok/images/show.gif" border="0" align="absmiddle" alt="点击右边链接查看模板详细演示>>"  /></a>
  </div>
 <div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">联系客服：QQ {foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach} <a href="http://wpa.qq.com/msgrd?v=3&uin={foreach from=$qq item=im}{if $im}{$im}{/if}{/foreach}&site=qq&menu=yes" target="_blank" ><img src='/images/qq.gif' alt="业务咨询" border="0" align="absmiddle" ></a></div>
-<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">模板价格：
-<font style="font-weight:bold; color:#FF0000; font-size:18px;">{$goods.shop_price_formated}</font></div>
+<div style=" text-align:left; height:30px; line-height:30px; border-bottom:1px #CCCCCC dashed;">模板价格：<b style="font-size: 13px">¥</b>
+<font style="font-weight:bold; color:#FF0000; font-size:18px;">{$goods.shop_price}</font></div>
 </div>
 </div>
 

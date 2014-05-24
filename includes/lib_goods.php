@@ -66,7 +66,7 @@ function get_categories_tree($cat_id = 0,$curr_id = 0)
 
         foreach ($res AS $row)
         {
-            if ($row['is_show'] && $row['cat_name']!='免费模板')
+            if ($row['is_show'] && $row['cat_name']!='免费模板' )
             {
                 $cat_arr[$row['cat_id']]['id']   = $row['cat_id'];
                 $cat_arr[$row['cat_id']]['name'] = $row['cat_id']==1?'全部':$row['cat_name'];
@@ -97,7 +97,7 @@ function get_child_tree($tree_id = 0,$id=1)
         $res = $GLOBALS['db']->getAll($child_sql);
         foreach ($res AS $row)
         {
-            if ($row['is_show'])
+            if ($row['is_show'] )
 
                $three_arr[$row['cat_id']]['id']   = $row['cat_id'];
                $three_arr[$row['cat_id']]['name'] = $row['cat_name'];

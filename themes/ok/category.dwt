@@ -21,10 +21,10 @@
 
 <!--{foreach from=$categories item=cat}-->
 
-<a href="{$cat.url}" style="{$cat.style}">{$cat.name}</a>&nbsp;
+<a href="/{$cat.url}" style="{$cat.style}">{$cat.name}</a>&nbsp;
 
 <!--{foreach from=$cat.cat_id item=child}-->
-<a href="{$child.url}" style="{$child.style}">{$child.name}</a>&nbsp;
+<a href="/{$child.url}" style="{$child.style}">{$child.name}</a>&nbsp;
 <!--{/foreach}-->
 <!--{/foreach}-->
 </div>
@@ -33,7 +33,7 @@
 				<!-- {if $grade.selected} -->
 				<a style="color:#FF0000">{$grade.price_range}</a>&nbsp;&nbsp;
 				<!-- {else} -->
-				<a href="{$grade.url}">{$grade.price_range}</a>&nbsp;&nbsp;
+				<a href="/{$grade.url}">{$grade.price_range}</a>&nbsp;&nbsp;
 				<!-- {/if} -->
 			<!--{/foreach}-->
 </div>
@@ -44,7 +44,7 @@
 				<!-- {if $attr.selected} -->
 				<a style="color:#FF0000">{$attr.attr_value}</a>&nbsp;&nbsp;&nbsp;
 				<!-- {else} -->
-				<a href="{$attr.url}">{$attr.attr_value}</a>&nbsp;&nbsp;
+				<a href="/{$attr.url}">{$attr.attr_value}</a>&nbsp;&nbsp;
 				<!-- {/if} -->
 			<!--{/foreach}-->
       <!--{/foreach}-->
@@ -52,7 +52,7 @@
 
 <div style=" padding-bottom:5px; padding-top:5px; "><font style=" color:#666; font-weight:bold;">按推荐：</font>
  <!--{foreach from=$best_goods item=goods}-->
-<a href="{$goods.url}" target="_blank" title="{$goods.name|escape:html}">{$goods.name2}</a>&nbsp;
+<a href="/item/{$goods.id}.html" target="_blank" title="{$goods.name|escape:html}">{$goods.name2}</a>&nbsp;
  <!--{/foreach}-->
 </div>
 
@@ -69,7 +69,7 @@
      <div class="goodsItem_re" onMouseOver="showG('G_{$goods.goods_id}','s')" onMouseOut="showG('G_{$goods.goods_id}','h')" style=" margin-left:10px;">
        <ul>
        <li>
-       <a href="/item/{$goods.id}.html" title="{$goods.goods_name|escape:html}"><img src="/images/placeholder.png" lazy-src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
+       <a href="/item/{$goods.goods_id}.html" title="{$goods.goods_name|escape:html}"><img src="/images/placeholder.png" lazy-src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" class="goodsimg" /></a><br />
        <p id="G_{$goods.goods_id}" style="display:none;">{$goods.goods_name}</p>
        </li>
        </ul>
