@@ -3,14 +3,14 @@
 /**
  * ECSHOP 模版类
  * ============================================================================
- * 版权所有 2005-2010 上海商派网络科技有限公司，并保留所有权利。
+ * * 版权所有 2005-2012 上海商派网络科技有限公司，并保留所有权利。
  * 网站地址: http://www.ecshop.com；
  * ----------------------------------------------------------------------------
  * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
  * 使用；不允许对程序代码以任何形式任何目的的再发布。
  * ============================================================================
- * $Author: liuhui $
- * $Id: cls_template.php 17063 2010-03-25 06:35:46Z liuhui $
+ * $Author: liubo $
+ * $Id: cls_template.php 17217 2011-01-19 06:29:08Z liubo $
  */
 
 class cls_template
@@ -284,8 +284,8 @@ class cls_template
         {
             $source = $this->smarty_prefilter_preCompile($source);
         }
-        $source = preg_replace("/<\?[^><]+\?>/i", "", $source);
-        return preg_replace("/{([^\}\{\n]*)}/e", "\$this->select('\\1');", $source);
+        $source = preg_replace("/<\?[^><]+\?>|<\%[^><]+\%>|<script[^>]+language[^>]*=[^>]*php[^>]*>[^><]*<\/script\s*>/iU", "", $source);
+        return preg_replace_callback("/{([^\}\{\n]*)}/", function($r) { return $this->select($r[1]); }, $source);
     }
 
     /**
@@ -403,10 +403,8 @@ class cls_template
         }
         else
         {
-            //$tag_sel = array_shift(explode(' ', $tag));
-			
-			$tag_arr = explode(' ', $tag); 
-			$tag_sel = array_shift($tag_arr); 
+            $tag_arr = explode(' ', $tag);
+            $tag_sel = array_shift($tag_arr);
             switch ($tag_sel)
             {
                 case 'if':
@@ -477,7 +475,7 @@ class cls_template
                 case 'insert' :
                     $t = $this->get_para(substr($tag, 7), false);
 
-                    $out = "<?php \n" . '$k = ' . preg_replace("/(\'\\$[^,]+)/e" , "stripslashes(trim('\\1','\''));", var_export($t, true)) . ";\n";
+                    $out = "<?php \n" . '$k = ' . preg_replace_callback("/(\'\\$[^,]+)/" , function($m){return stripslashes(trim($m[1],'\''));}, var_export($t, true)) . ";\n";
                     $out .= 'echo $this->_echash . $k[\'name\'] . \'|\' . serialize($k) . $this->_echash;' . "\n?>";
 
                     return $out;
@@ -536,7 +534,10 @@ class cls_template
     {
         if (strrpos($val, '[') !== false)
         {
-            $val = preg_replace("/\[([^\[\]]*)\]/eis", "'.'.str_replace('$','\$','\\1')", $val);
+//            $val = preg_replace("/\[([^\[\]]*)\]/is", "'.'.str_replace('$','\$','\\1')", $val);
+//            $val = preg_replace("/\[([^\[\]]*)\]/is", $replacement, $val);
+//            $val = preg_replace_callback("/\[([^\[\]]*)\]/is", function($m){return "'.'.str_replace('$','\$',$m[1])";}, $val);
+            $val = preg_replace_callback("/\[([^\[\]]*)\]/is", function($m){return '.'.str_replace('$','\$',$m[1]);}, $val);
         }
 
         if (strrpos($val, '|') !== false)
@@ -1053,9 +1054,11 @@ class cls_template
         if ($file_type == '.dwt')
         {
             /* 将模板中所有library替换为链接 */
-            $pattern     = '/<!--\s#BeginLibraryItem\s\"\/(.*?)\"\s-->.*?<!--\s#EndLibraryItem\s-->/se';
+            $pattern     = '/<!--\s#BeginLibraryItem\s\"\/(.*?)\"\s-->.*?<!--\s#EndLibraryItem\s-->/s';
             $replacement = "'{include file='.strtolower('\\1'). '}'";
-            $source      = preg_replace($pattern, $replacement, $source);
+            $source      = preg_replace_callback($pattern,
+                function ($matches) { return '{include file='.strtolower($matches[1]). '}';},
+                $source);
 
             /* 检查有无动态库文件，如果有为其赋值 */
             $dyna_libs = get_dyna_libs($GLOBALS['_CFG']['template'], $this->_current_file);

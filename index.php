@@ -343,7 +343,7 @@ function index_get_auction()
  *
  * @access  private
  * @return  array
- */
+
 function index_get_links()
 {
     $sql = 'SELECT link_logo, link_name, link_url FROM ' . $GLOBALS['ecs']->table('friend_link') . ' ORDER BY show_order';
@@ -368,5 +368,5 @@ function index_get_links()
 
     return $links;
 }
-
+ */
 ?>
